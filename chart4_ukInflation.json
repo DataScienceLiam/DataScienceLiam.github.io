@@ -70,7 +70,7 @@
 
       "mark":{
         "type": "line",    
-        "color":"#00BFFF",
+        "color":"#180cf5",
         "width": 10,
         "strokeWidth":2,
         "opacity":1},
@@ -90,6 +90,7 @@
     },
 
     
+
 
     {
       "encoding": {
@@ -114,7 +115,7 @@
       "layer": [
         {"mark": {
           "type": "circle",
-          "color":"#00BFFF",
+          "color":"#180cf5",
        
           "size":100}},
 
@@ -122,7 +123,7 @@
           "type": "text", 
           "align": "left", 
           "dx": 8,
-          "color":"#00BFFF"
+          "color":"#180cf5"
        }}
       ]
     }
