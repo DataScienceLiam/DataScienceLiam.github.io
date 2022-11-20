@@ -10,7 +10,7 @@
 
 /* Set the background color for my page: */
 body{
-    background-color: #3aafa9;
+    background-color: #024a67;
     margin: auto;
     width: auto;
     overflow:scroll;
@@ -25,7 +25,7 @@ body{
 .topnav {
     overflow: hidden;
     display: flex;
-    background-color: #449c98;
+    background-color: #9BAEBC;
     text-align: center;
     justify-content: left;
     list-style: none;
@@ -54,12 +54,12 @@ body{
   }
   
   .topnav a:hover {
-    background-color: #206a67;
+    background-color: #566571;
     color: black;
   }
   
   .topnav a.active {
-    background-color:#00706cb4;
+    background-color:#687987;
     color: white;
   }
 
