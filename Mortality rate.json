@@ -1,5 +1,5 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
     "title": {
         "text": "England mortality rate",
         "subtitle": "Source: ONS",
@@ -63,7 +63,7 @@
         }
     ],
     "width": "container",
-    "height": 300,
+    "height": 260,
     "data": {
         "values": [
             {
@@ -2678,37 +2678,76 @@
             }
         ]
     },
-"mark": {"type": "circle", "size": 75},
-    "encoding": {
-        "x": {
-            "field": "DateClean",
-            "type": "temporal",
-            "axis": {
-                "title": "Year",
-                "labelAngle": 45,
-                "ticks": true,
-                "tickWidth": 1.3,
-                "tickColor": "grey"
-            }
-        },
-        "y": {
-            "field": "Value",
-            "type": "quantitative",
-            "title": "Deaths per 100,000"
-        },
-        "xOffset": {
-            "field": "Group"
-        },
+
+  "layer": [
+
+    {
+      "mark": {"type": "circle", "size": 75},
+      "encoding": {
         "color": {
             "field": "Group",
-            "legend":{"orient": "top-left",
+            "legend":{"orient": "bottom-right",
             "columns": 1,
             "title": null,
             "symbolStrokeWidth": 4,
-            "labelFontSize": 12.5
-        }
-        }
+            "labelFontSize": 12.5},
+            "scale": {"scheme": "set2"}
+            
+        },
+        "x": {"field": "DateClean", "type": "temporal", "title": "Year"},
+        "y": {"field": "Value", "type": "quantitative", "title": "Deaths per 100,000"}}
+      },
 
-
+    {
+      "mark": "point",
+      "encoding": {
+        "opacity": {"value": 0},
+        "x": {"field": "DateClean", "type": "temporal"}
+      },
+      "selection": {
+        "selector040": {
+          "type": "single",
+          "nearest": true,
+          "on": "mouseover",
+          "fields": ["DateClean"],
+          "empty": "none"
+        }
+      }
+    },
+    {
+      "mark": "point",
+      "encoding": {
+        "color": {"field": "Group", "type": "nominal"},
+        "opacity": {
+          "condition": {"value": 1, "selection": "selector040"},
+          "value": 0
+        },
+        "x": {"field": "DateClean", "type": "temporal"},
+        "y": {"field": "Value", "type": "quantitative"}
+      }
+    },
+    {
+      "mark": {"type": "rule", "color": "gray"},
+      "encoding": {"x": {"field": "DateClean", "type": "temporal"}},
+      "transform": [{"filter": {"selection": "selector040"}}]
+    },
+    {
+      "mark": {"type": "text", "align": "right", "dx": 5, "dy": 0, "fontSize": 15, "fill":"black","fontWeight": "bold"},
+      "encoding": {
+        "color": {"field": "Group", "type": "nominal"},
+        "text": {
+          "condition": {
+            "field": "Value",
+            "type": "quantitative",
+            "selection": "selector040"
+          },
+          "value": " "
+        },
+        "x": {"field": "DateClean", "type": "temporal"},
+        "y": {"field": "Value", "type": "quantitative"}
+      }
     }
+  ]
 }
+
+

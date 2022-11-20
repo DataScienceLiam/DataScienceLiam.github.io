@@ -80,7 +80,7 @@
     },
     {
         "calculate": "timeParse(datum.date12, '%Y-%m')",
-        "as": "DataClean"
+        "as": "DateClean"
     }
 ],
 "data": {
@@ -5760,23 +5760,66 @@
         }
     ]
 },
+
+
 "height": 220,
 "width": "container",
-"mark": "line",
+
+"layer": [
+
+{"mark": {"type":"line", "color": "#097045"},
 "encoding": {
-    "x": {
-        "field": "DataClean",
-        "type": "temporal",
-        "axis": {
-            "labelAngle": 0
-        },
-        "title": "Date"
+
+        "x": {"field": "DateClean", "type": "temporal", "title": "Date"},
+        "y": {"field": "value", "type": "quantitative", "title": "Unemployment rate, %","scale": {"domain": [0,14]}}
+      }
     },
-    "y": {
-        "field": "value",
-        "type": "quantitative",
-        "title": "Unemployment rate, %",
-        "scale": {"domain": [0,14]}
+    {
+      "mark": "point",
+      "encoding": {
+        "opacity": {"value": 0},
+        "x": {"field": "DateClean", "type": "temporal"}
+      },
+      "selection": {
+        "selector040": {
+          "type": "single",
+          "nearest": true,
+          "on": "mouseover",
+          "fields": ["DateClean"],
+          "empty": "none"
+        }
+      }
+    },
+    {
+      "mark": "point",
+      "encoding": {
+        "opacity": {
+          "condition": {"value": 1, "selection": "selector040"},
+          "value": 0
+        },
+        "x": {"field": "DateClean", "type": "temporal"},
+        "y": {"field": "value", "type": "quantitative"}
+      }
+    },
+    {
+      "mark": {"type": "rule", "color": "gray"},
+      "encoding": {"x": {"field": "DateClean", "type": "temporal"}},
+      "transform": [{"filter": {"selection": "selector040"}}]
+    },
+    {
+      "mark": {"type": "text", "align": "right", "dx": 5, "dy": 30, "fontSize": 15},
+      "encoding": {
+ 
+        "text": {
+          "condition": {
+            "field": "value",
+            "type": "quantitative",
+            "selection": "selector040"
+          },
+          "value": " "
+        },
+        "x": {"field": "DateClean", "type": "temporal"},
+        "y": {"field": "value", "type": "quantitative"}
+      }
     }
-}
-}
+  ]}

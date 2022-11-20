@@ -14,7 +14,7 @@
     },
 
 
-    "height": 300,
+    "height": 260,
     "width": "container",
     "mark": {
         "type": "bar",
@@ -41,6 +41,7 @@
             "axis": {
                 "grid": false
             }
-        }
+        },
+    "tooltip": {"field": "Debt-GDP", "type": "quantitative", "title":"Debt-GDP"}
     }
 }

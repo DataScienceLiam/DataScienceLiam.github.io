@@ -1,6 +1,6 @@
 {
   
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
 
 
   "description0": "Example using ONS API",
@@ -20,7 +20,7 @@
 
 
   "width":"container",
-  "height":300,
+  "height":260,
 
 
   "data": {
@@ -34,7 +34,7 @@
 
   "mark":{
     "type": "line",
-    "color":"red",
+    "color":"#ad0000",
     "strokeWidth":2,
     "opacity":1
   },
@@ -71,28 +71,61 @@
 
 
 
-  "encoding": {
-    
-    "x": {
-      "field": "date3",
-      "type": "temporal",
-      "title":null
-      },
+"layer": [
 
-    "y": {
-      "field": "value",                
-      "type": "quantitative",
-      "title":null,
-      "scale":{
-        "domain":{
-          "data": "myData", 
-          "field": "value"}}
-      },
+{"mark": {"type":"line", "color": "#ad0000"},
+"encoding": {
 
-   "tooltip": [
-    {"field": "date3", "title": "Date", "type": "temporal"},
-    {"field": "value", "title": "GDP (£m)", "type": "quantitative"}
-  ]
-  
-}
-}
+        "x": {"field": "date3", "type": "temporal", "title": "Date"},
+        "y": {"field": "value", "type": "quantitative", "title": "GDP (£m)","scale":{"domain":{"data": "myData", "field": "value"}}}
+      }
+    },
+    {
+      "mark": "point",
+      "encoding": {
+        "opacity": {"value": 0},
+        "x": {"field": "date3", "type": "temporal"}
+      },
+      "selection": {
+        "selector040": {
+          "type": "single",
+          "nearest": true,
+          "on": "mouseover",
+          "fields": ["date3"],
+          "empty": "none"
+        }
+      }
+    },
+    {
+      "mark": "point",
+      "encoding": {
+        "opacity": {
+          "condition": {"value": 1, "selection": "selector040"},
+          "value": 0
+        },
+        "x": {"field": "date3", "type": "temporal"},
+        "y": {"field": "value", "type": "quantitative"}
+      }
+    },
+    {
+      "mark": {"type": "rule", "color": "gray"},
+      "encoding": {"x": {"field": "date3", "type": "temporal"}},
+      "transform": [{"filter": {"selection": "selector040"}}]
+    },
+    {
+      "mark": {"type": "text", "align": "right", "dx": 0, "dy": -20, "fontSize": 15, "fontWeight": "bold"},
+      "encoding": {
+ 
+        "text": {
+          "condition": {
+            "field": "value",
+            "type": "quantitative",
+            "selection": "selector040"
+          },
+          "value": " "
+        },
+        "x": {"field": "date3", "type": "temporal"},
+        "y": {"field": "value", "type": "quantitative"}
+      }
+    }
+  ]}

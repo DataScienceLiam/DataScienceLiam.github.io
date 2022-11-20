@@ -78,7 +78,7 @@
             }
         ]
     },
-    "height": 300,
+    "height": 260,
     "width": "container",
     "mark": {
         "type": "bar",
@@ -94,6 +94,7 @@
             "field": "Estimated Total Salary",
             "title": "Total Player salaries, estimated, £",
             "type": "quantitative"
-        }
+        },
+    "tooltip": {"field": "Estimated Total Salary", "type": "quantitative", "title":"£"}
     }
 }
