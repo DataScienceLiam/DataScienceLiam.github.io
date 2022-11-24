@@ -115,7 +115,7 @@
         "y": {
           "field": "value",
           "type": "quantitative",
-          "title": "GDP (£m)"
+          "title": "CPI, %"
         }
       }
     },
