@@ -183,8 +183,8 @@
         "align": "left",
         "baseline": "bottom",
         "text": ["GDP per capita","", "Tax revenue per capita"],
-        "x": 40,
-        "y": 30
+        "x": 25,
+        "y": 13
       }},
     {
       "data": {"values": [{}]},
@@ -192,8 +192,8 @@
         "type": "circle",
         "size": 200,
         "opacity": 0.65,
-        "y": 24,
-        "x": 30,
+        "y": 8,
+        "x": 15,
         "fill": "#ad0000"
 
       }},
@@ -203,8 +203,8 @@
         "type": "circle",
         "size": 200,
         "opacity": 0.65,
-        "y": 50.5,
-        "x": 30,
+        "y": 33,
+        "x": 15,
         "fill": "#228B22"
 
       }}
