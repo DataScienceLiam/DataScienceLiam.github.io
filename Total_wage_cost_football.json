@@ -95,6 +95,7 @@
             "title": "Total Player salaries, estimated, £",
             "type": "quantitative"
         },
-    "tooltip": {"field": "Estimated Total Salary", "type": "quantitative", "title":"£"}
+    "tooltip": {"field": "Estimated Total Salary", "type": "quantitative", "title":"£",
+        "format": ","}
     }
 }

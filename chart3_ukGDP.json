@@ -120,7 +120,8 @@
           "condition": {
             "field": "value",
             "type": "quantitative",
-            "selection": "selector040"
+            "selection": "selector040",
+            "format": ","
           },
           "value": " "
         },
