@@ -1,0 +1,152 @@
+Country code,Country Name,Income Tax,Sales Tax,Corporation Tax
+afg,Afghanistan,20.0,10.0,20.0
+alb,Albania,23.0,20.0,15.0
+dza,Algeria,35.0,19.0,26.0
+ago,Angola,25.0,14.0,25.0
+arg,Argentina,35.0,21.0,25.0
+arm,Armenia,22.0,20.0,18.0
+abw,Aruba,52.0,3.0,25.0
+aus,Australia,45.0,10.0,30.0
+aut,Austria,55.0,20.0,25.0
+aze,Azerbaijan,25.0,18.0,20.0
+bhs,Bahamas,0.0,12.0,0.0
+bhr,Bahrain,0.0,5.0,0.0
+bgd,Bangladesh,25.0,15.0,32.0
+brb,Barbados,28.0,17.0,5.0
+blr,Belarus,13.0,20.0,18.0
+bel,Belgium,50.0,21.0,25.0
+bmu,Bermuda,0.0,,0.0
+bih,Bosnia and Herzegovina,10.0,17.0,10.0
+bwa,Botswana,25.0,12.0,22.0
+bra,Brazil,27.0,17.0,34.0
+bgr,Bulgaria,10.0,20.0,10.0
+khm,Cambodia,20.0,10.0,20.0
+cmr,Cameroon,35.0,19.0,33.0
+can,Canada,33.0,5.0,26.0
+cym,Cayman Islands,0.0,,0.0
+tcd,Chad,30.0,18.0,35.0
+chl,Chile,40.0,19.0,27.0
+chn,China,45.0,13.0,25.0
+col,Colombia,39.0,19.0,31.0
+cri,Costa Rica,25.0,9.0,30.0
+hrv,Croatia,30.0,25.0,18.0
+cyp,Cyprus,35.0,19.0,12.0
+dnk,Denmark,55.0,25.0,22.0
+dom,Dominican Republic,25.0,18.0,28.0
+ecu,Ecuador,35.0,12.0,25.0
+egy,Egypt,25.0,14.0,22.0
+slv,El Salvador,30.0,13.0,30.0
+gnq,Equatorial Guinea,35.0,15.0,35.0
+est,Estonia,20.0,20.0,20.0
+eth,Ethiopia,35.0,15.0,30.0
+fji,Fiji,20.0,9.0,20.0
+fin,Finland,56.0,24.0,20.0
+fra,France,45.0,20.0,26.0
+gab,Gabon,35.0,18.0,30.0
+gmb,Gambia,30.0,15.0,27.0
+geo,Georgia,20.0,18.0,15.0
+deu,Germany,45.0,19.0,30.0
+gha,Ghana,30.0,13.0,25.0
+grc,Greece,44.0,24.0,24.0
+gtm,Guatemala,7.0,12.0,25.0
+gin,Guinea,40.0,14.0,35.0
+hnd,Honduras,25.0,15.0,25.0
+hkg,Hong Kong,15.0,,16.0
+hun,Hungary,15.0,27.0,9.0
+isl,Iceland,46.0,24.0,20.0
+ind,India,42.0,18.0,25.0
+idn,Indonesia,30.0,10.0,22.0
+irq,Iraq,15.0,,35.0
+irl,Ireland,48.0,23.0,12.0
+imn,Isle of Man,20.0,20.0,0.0
+isr,Israel,50.0,17.0,23.0
+ita,Italy,43.0,22.0,24.0
+jam,Jamaica,30.0,15.0,25.0
+jpn,Japan,55.0,10.0,30.0
+jor,Jordan,30.0,16.0,20.0
+kaz,Kazakhstan,10.0,12.0,20.0
+ken,Kenya,30.0,16.0,30.0
+kwt,Kuwait,0.0,,15.0
+lva,Latvia,31.0,21.0,20.0
+lbn,Lebanon,25.0,11.0,17.0
+lso,Lesotho,30.0,15.0,25.0
+lby,Libya,10.0,,20.0
+lie,Liechtenstein,22.0,7.0,12.0
+ltu,Lithuania,20.0,21.0,15.0
+lux,Luxembourg,45.0,17.0,24.0
+mdg,Madagascar,20.0,20.0,20.0
+mwi,Malawi,30.0,16.0,30.0
+mys,Malaysia,30.0,10.0,24.0
+mlt,Malta,35.0,18.0,35.0
+mrt,Mauritania,40.0,16.0,25.0
+mus,Mauritius,15.0,15.0,15.0
+mex,Mexico,35.0,16.0,30.0
+mng,Mongolia,10.0,10.0,25.0
+mne,Montenegro,9.0,21.0,9.0
+mar,Morocco,38.0,20.0,31.0
+moz,Mozambique,32.0,17.0,32.0
+mmr,Myanmar,25.0,5.0,25.0
+nam,Namibia,37.0,15.0,32.0
+nld,Netherlands,49.0,21.0,25.0
+nzl,New Zealand,39.0,15.0,28.0
+nic,Nicaragua,30.0,15.0,30.0
+nga,Nigeria,24.0,7.0,30.0
+nor,Norway,38.0,25.0,22.0
+omn,Oman,0.0,5.0,15.0
+pak,Pakistan,35.0,17.0,29.0
+pan,Panama,25.0,7.0,25.0
+png,Papua New Guinea,42.0,10.0,30.0
+per,Peru,30.0,18.0,29.0
+phl,Philippines,35.0,12.0,30.0
+pol,Poland,32.0,23.0,19.0
+prt,Portugal,48.0,23.0,21.0
+pri,Puerto Rico,33.0,,37.0
+qat,Qatar,0.0,,10.0
+rou,Romania,10.0,19.0,16.0
+rwa,Rwanda,30.0,18.0,30.0
+wsm,Samoa,27.0,15.0,27.0
+sau,Saudi Arabia,0.0,15.0,20.0
+sen,Senegal,40.0,18.0,30.0
+srb,Serbia,10.0,20.0,15.0
+syc,Seychelles,15.0,15.0,33.0
+sle,Sierra Leone,15.0,15.0,30.0
+sgp,Singapore,22.0,7.0,17.0
+svk,Slovakia,25.0,20.0,21.0
+svn,Slovenia,50.0,22.0,19.0
+zaf,South Africa,45.0,15.0,28.0
+esp,Spain,47.0,21.0,25.0
+lka,Sri Lanka,24.0,8.0,24.0
+sdn,Sudan,15.0,17.0,35.0
+sur,Suriname,38.0,10.0,36.0
+swe,Sweden,52.0,25.0,20.0
+che,Switzerland,40.0,7.0,14.0
+tjk,Tajikistan,13.0,18.0,
+tha,Thailand,35.0,7.0,20.0
+tun,Tunisia,35.0,19.0,15.0
+uga,Uganda,40.0,18.0,30.0
+ukr,Ukraine,18.0,20.0,18.0
+are,United Arab Emirates,0.0,5.0,0.0
+ury,Uruguay,36.0,22.0,25.0
+uzb,Uzbekistan,12.0,15.0,7.0
+yem,Yemen,15.0,5.0,20.0
+zmb,Zambia,37.0,16.0,35.0
+zwe,Zimbabwe,40.0,14.0,24.0
+civ,Ivory Coast,60.0,18.0,25.0
+gbr,United Kingdom,45.0,20.0,19.0
+kor,South Korea,45.0,10.0,25.0
+tur,Turkey,40.0,18.0,25.0
+twn,Taiwan,40.0,5.0,20.0
+cod,Republic of the Congo,40.0,18.0,28.0
+usa,United States,37.0,0.0,21.0
+vnm,Vietnam,35.0,10.0,20.0
+ven,Venezuela,34.0,16.0,34.0
+tza,Tanzania,30.0,18.0,30.0
+lao,Laos,25.0,10.0,20.0
+tto,Trinidad And Tobago,25.0,12.0,30.0
+cze,Czech Republic,23.0,21.0,19.0
+syr,Syria,22.0,,28.0
+rus,Russia,13.0,20.0,20.0
+bol,Bolivia,13.0,13.0,25.0
+mda,Moldova,12.0,20.0,12.0
+mac,Macau,12.0,,12.0
+brn,Brunei,0.0,,18.0
