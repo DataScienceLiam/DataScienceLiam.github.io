@@ -51,8 +51,9 @@
       ],    
 
   "projection": {
-    "type": "naturalEarth1"},
-  
+    "type": "naturalEarth1",
+    "scale": 103,
+    "center": [10,0]},
   "mark": {
       "type": "geoshape",
       "stroke": "#323232",
@@ -63,7 +64,7 @@
       "field": "Income Tax",
       "type": "quantitative",
         "title": "Income Tax rate",
-        "scale": {"scheme": "reds"},
+        "scale": {"scheme": "reds", "domain":[0,60]},
 "legend":{
     "orient": "bottom-left",
     "direction": "horizontal"}},
