@@ -61,7 +61,11 @@
       "type": "quantitative",
       "title": "Frequency",
     "legend":{"orient": "top-left"}
-    }
+    },
+  "tooltip":[{
+    "aggregate":"count", 
+    "type": "quantitative", 
+    "title":"Frequency"}]
   }},
     {
         "data": {"values": [{}]},
