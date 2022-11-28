@@ -1,250 +1,249 @@
-Country code,Country Name_x,Country Name_y,Income Tax,Sales Tax,Corporation Tax
-afg,Afghanistan,Afghanistan,20.0,10.0,20.0
-ala,Åland Islands,,,,
-alb,Albania,Albania,23.0,20.0,15.0
-dza,Algeria,Algeria,35.0,19.0,26.0
-asm,American Samoa,,,,
-and,Andorra,,,,
-ago,Angola,Angola,25.0,14.0,25.0
-aia,Anguilla,,,,
-ata,Antarctica,"","test","",
-atg,Antigua and Barbuda,,,,
-arg,Argentina,Argentina,35.0,21.0,25.0
-arm,Armenia,Armenia,22.0,20.0,18.0
-abw,Aruba,Aruba,52.0,3.0,25.0
-aus,Australia,Australia,45.0,10.0,30.0
-aut,Austria,Austria,55.0,20.0,25.0
-aze,Azerbaijan,Azerbaijan,25.0,18.0,20.0
-bhs,Bahamas,Bahamas,0.0,12.0,0.0
-bhr,Bahrain,Bahrain,0.0,5.0,0.0
-bgd,Bangladesh,Bangladesh,25.0,15.0,32.0
-brb,Barbados,Barbados,28.0,17.0,5.0
-blr,Belarus,Belarus,13.0,20.0,18.0
-bel,Belgium,Belgium,50.0,21.0,25.0
-blz,Belize,,,,
-ben,Benin,,,,
-bmu,Bermuda,Bermuda,0.0,,0.0
-btn,Bhutan,,,,
-bol,Bolivia (Plurinational State of),Bolivia,13.0,13.0,25.0
-bes,"Bonaire, Sint Eustatius and Saba",,,,
-bih,Bosnia and Herzegovina,Bosnia and Herzegovina,10.0,17.0,10.0
-bwa,Botswana,Botswana,25.0,12.0,22.0
-bvt,Bouvet Island,,,,
-bra,Brazil,Brazil,27.0,17.0,34.0
-iot,British Indian Ocean Territory,,,,
-brn,Brunei Darussalam,Brunei,0.0,,18.0
-bgr,Bulgaria,Bulgaria,10.0,20.0,10.0
-bfa,Burkina Faso,,,,
-bdi,Burundi,,,,
-cpv,Cabo Verde,,,,
-khm,Cambodia,Cambodia,20.0,10.0,20.0
-cmr,Cameroon,Cameroon,35.0,19.0,33.0
-can,Canada,Canada,33.0,5.0,26.0
-cym,Cayman Islands,Cayman Islands,0.0,,0.0
-caf,Central African Republic,,,,
-tcd,Chad,Chad,30.0,18.0,35.0
-chl,Chile,Chile,40.0,19.0,27.0
-chn,China,China,45.0,13.0,25.0
-cxr,Christmas Island,,,,
-cck,Cocos (Keeling) Islands,,,,
-col,Colombia,Colombia,39.0,19.0,31.0
-com,Comoros,,,,
-cog,Congo,,,,
-cod,"Congo, Democratic Republic of the",Republic of the Congo,40.0,18.0,28.0
-cok,Cook Islands,,,,
-cri,Costa Rica,Costa Rica,25.0,9.0,30.0
-civ,Côte d'Ivoire,Ivory Coast,60.0,18.0,25.0
-hrv,Croatia,Croatia,30.0,25.0,18.0
-cub,Cuba,,,,
-cuw,Curaçao,,,,
-cyp,Cyprus,Cyprus,35.0,19.0,12.0
-cze,Czechia,Czech Republic,23.0,21.0,19.0
-dnk,Denmark,Denmark,55.0,25.0,22.0
-dji,Djibouti,,,,
-dma,Dominica,,,,
-dom,Dominican Republic,Dominican Republic,25.0,18.0,28.0
-ecu,Ecuador,Ecuador,35.0,12.0,25.0
-egy,Egypt,Egypt,25.0,14.0,22.0
-slv,El Salvador,El Salvador,30.0,13.0,30.0
-gnq,Equatorial Guinea,Equatorial Guinea,35.0,15.0,35.0
-eri,Eritrea,,,,
-est,Estonia,Estonia,20.0,20.0,20.0
-swz,Eswatini,,,,
-eth,Ethiopia,Ethiopia,35.0,15.0,30.0
-flk,Falkland Islands (Malvinas),,,,
-fro,Faroe Islands,,,,
-fji,Fiji,Fiji,20.0,9.0,20.0
-fin,Finland,Finland,56.0,24.0,20.0
-fra,France,France,45.0,20.0,26.0
-guf,French Guiana,,,,
-pyf,French Polynesia,,,,
-atf,French Southern Territories,,,,
-gab,Gabon,Gabon,35.0,18.0,30.0
-gmb,Gambia,Gambia,30.0,15.0,27.0
-geo,Georgia,Georgia,20.0,18.0,15.0
-deu,Germany,Germany,45.0,19.0,30.0
-gha,Ghana,Ghana,30.0,13.0,25.0
-gib,Gibraltar,,,,
-grc,Greece,Greece,44.0,24.0,24.0
-grl,Greenland,,,,
-grd,Grenada,,,,
-glp,Guadeloupe,,,,
-gum,Guam,,,,
-gtm,Guatemala,Guatemala,7.0,12.0,25.0
-ggy,Guernsey,,,,
-gin,Guinea,Guinea,40.0,14.0,35.0
-gnb,Guinea-Bissau,,,,
-guy,Guyana,,,,
-hti,Haiti,,,,
-hmd,Heard Island and McDonald Islands,,,,
-vat,Holy See,,,,
-hnd,Honduras,Honduras,25.0,15.0,25.0
-hkg,Hong Kong,Hong Kong,15.0,,16.0
-hun,Hungary,Hungary,15.0,27.0,9.0
-isl,Iceland,Iceland,46.0,24.0,20.0
-ind,India,India,42.0,18.0,25.0
-idn,Indonesia,Indonesia,30.0,10.0,22.0
-irn,Iran (Islamic Republic of),,,,
-irq,Iraq,Iraq,15.0,,35.0
-irl,Ireland,Ireland,48.0,23.0,12.0
-imn,Isle of Man,Isle of Man,20.0,20.0,0.0
-isr,Israel,Israel,50.0,17.0,23.0
-ita,Italy,Italy,43.0,22.0,24.0
-jam,Jamaica,Jamaica,30.0,15.0,25.0
-jpn,Japan,Japan,55.0,10.0,30.0
-jey,Jersey,,,,
-jor,Jordan,Jordan,30.0,16.0,20.0
-kaz,Kazakhstan,Kazakhstan,10.0,12.0,20.0
-ken,Kenya,Kenya,30.0,16.0,30.0
-kir,Kiribati,,,,
-prk,Korea (Democratic People's Republic of),,,,
-kor,"Korea, Republic of",South Korea,45.0,10.0,25.0
-kwt,Kuwait,Kuwait,0.0,,15.0
-kgz,Kyrgyzstan,,,,
-lao,Lao People's Democratic Republic,Laos,25.0,10.0,20.0
-lva,Latvia,Latvia,31.0,21.0,20.0
-lbn,Lebanon,Lebanon,25.0,11.0,17.0
-lso,Lesotho,Lesotho,30.0,15.0,25.0
-lbr,Liberia,,,,
-lby,Libya,Libya,10.0,,20.0
-lie,Liechtenstein,Liechtenstein,22.0,7.0,12.0
-ltu,Lithuania,Lithuania,20.0,21.0,15.0
-lux,Luxembourg,Luxembourg,45.0,17.0,24.0
-mac,Macao,Macau,12.0,,12.0
-mdg,Madagascar,Madagascar,20.0,20.0,20.0
-mwi,Malawi,Malawi,30.0,16.0,30.0
-mys,Malaysia,Malaysia,30.0,10.0,24.0
-mdv,Maldives,,,,
-mli,Mali,,,,
-mlt,Malta,Malta,35.0,18.0,35.0
-mhl,Marshall Islands,,,,
-mtq,Martinique,,,,
-mrt,Mauritania,Mauritania,40.0,16.0,25.0
-mus,Mauritius,Mauritius,15.0,15.0,15.0
-myt,Mayotte,,,,
-mex,Mexico,Mexico,35.0,16.0,30.0
-fsm,Micronesia (Federated States of),,,,
-mda,"Moldova, Republic of",Moldova,12.0,20.0,12.0
-mco,Monaco,,,,
-mng,Mongolia,Mongolia,10.0,10.0,25.0
-mne,Montenegro,Montenegro,9.0,21.0,9.0
-msr,Montserrat,,,,
-mar,Morocco,Morocco,38.0,20.0,31.0
-moz,Mozambique,Mozambique,32.0,17.0,32.0
-mmr,Myanmar,Myanmar,25.0,5.0,25.0
-nam,Namibia,Namibia,37.0,15.0,32.0
-nru,Nauru,,,,
-npl,Nepal,,,,
-nld,Netherlands,Netherlands,49.0,21.0,25.0
-ncl,New Caledonia,,,,
-nzl,New Zealand,New Zealand,39.0,15.0,28.0
-nic,Nicaragua,Nicaragua,30.0,15.0,30.0
-ner,Niger,,,,
-nga,Nigeria,Nigeria,24.0,7.0,30.0
-niu,Niue,,,,
-nfk,Norfolk Island,,,,
-mkd,North Macedonia,,,,
-mnp,Northern Mariana Islands,,,,
-nor,Norway,Norway,38.0,25.0,22.0
-omn,Oman,Oman,0.0,5.0,15.0
-pak,Pakistan,Pakistan,35.0,17.0,29.0
-plw,Palau,,,,
-pse,"Palestine, State of",,,,
-pan,Panama,Panama,25.0,7.0,25.0
-png,Papua New Guinea,Papua New Guinea,42.0,10.0,30.0
-pry,Paraguay,,null,,
-per,Peru,Peru,30.0,18.0,29.0
-phl,Philippines,Philippines,35.0,12.0,30.0
-pcn,Pitcairn,,,,
-pol,Poland,Poland,32.0,23.0,19.0
-prt,Portugal,Portugal,48.0,23.0,21.0
-pri,Puerto Rico,Puerto Rico,33.0,,37.0
-qat,Qatar,Qatar,0.0,,10.0
-reu,Réunion,,,,
-rou,Romania,Romania,10.0,19.0,16.0
-rus,Russian Federation,Russia,13.0,20.0,20.0
-rwa,Rwanda,Rwanda,30.0,18.0,30.0
-blm,Saint Barthélemy,,,,
-shn,"Saint Helena, Ascension and Tristan da Cunha",,,,
-kna,Saint Kitts and Nevis,,,,
-lca,Saint Lucia,,,,
-maf,Saint Martin (French part),,,,
-spm,Saint Pierre and Miquelon,,,,
-vct,Saint Vincent and the Grenadines,,,,
-wsm,Samoa,Samoa,27.0,15.0,27.0
-smr,San Marino,,,,
-stp,Sao Tome and Principe,,,,
-sau,Saudi Arabia,Saudi Arabia,0.0,15.0,20.0
-sen,Senegal,Senegal,40.0,18.0,30.0
-srb,Serbia,Serbia,10.0,20.0,15.0
-syc,Seychelles,Seychelles,15.0,15.0,33.0
-sle,Sierra Leone,Sierra Leone,15.0,15.0,30.0
-sgp,Singapore,Singapore,22.0,7.0,17.0
-sxm,Sint Maarten (Dutch part),,,,
-svk,Slovakia,Slovakia,25.0,20.0,21.0
-svn,Slovenia,Slovenia,50.0,22.0,19.0
-slb,Solomon Islands,,,,
-som,Somalia,,,,
-zaf,South Africa,South Africa,45.0,15.0,28.0
-sgs,South Georgia and the South Sandwich Islands,,,,
-ssd,South Sudan,,,,
-esp,Spain,Spain,47.0,21.0,25.0
-lka,Sri Lanka,Sri Lanka,24.0,8.0,24.0
-sdn,Sudan,Sudan,15.0,17.0,35.0
-sur,Suriname,Suriname,38.0,10.0,36.0
-sjm,Svalbard and Jan Mayen,,,,
-swe,Sweden,Sweden,52.0,25.0,20.0
-che,Switzerland,Switzerland,40.0,7.0,14.0
-syr,Syrian Arab Republic,Syria,22.0,,28.0
-twn,"Taiwan, Province of China",Taiwan,40.0,5.0,20.0
-tjk,Tajikistan,Tajikistan,13.0,18.0,
-tza,"Tanzania, United Republic of",Tanzania,30.0,18.0,30.0
-tha,Thailand,Thailand,35.0,7.0,20.0
-tls,Timor-Leste,,,,
-tgo,Togo,,,,
-tkl,Tokelau,,,,
-ton,Tonga,,,,
-tto,Trinidad and Tobago,Trinidad And Tobago,25.0,12.0,30.0
-tun,Tunisia,Tunisia,35.0,19.0,15.0
-tur,Türkiye,Turkey,40.0,18.0,25.0
-tkm,Turkmenistan,,,,
-tca,Turks and Caicos Islands,,,,
-tuv,Tuvalu,,,,
-uga,Uganda,Uganda,40.0,18.0,30.0
-ukr,Ukraine,Ukraine,18.0,20.0,18.0
-are,United Arab Emirates,United Arab Emirates,0.0,5.0,0.0
-gbr,United Kingdom,United Kingdom,45.0,20.0,19.0
-usa,United States of America,United States,37.0,0.0,21.0
-umi,United States Minor Outlying Islands,,,,
-ury,Uruguay,Uruguay,36.0,22.0,25.0
-uzb,Uzbekistan,Uzbekistan,12.0,15.0,7.0
-vut,Vanuatu,,,,
-ven,Venezuela (Bolivarian Republic of),Venezuela,34.0,16.0,34.0
-vnm,Viet Nam,Vietnam,35.0,10.0,20.0
-vgb,Virgin Islands (British),,,,
-vir,Virgin Islands (U.S.),,,,
-wlf,Wallis and Futuna,,,,
-esh,Western Sahara,,,,
-yem,Yemen,Yemen,15.0,5.0,20.0
-zmb,Zambia,Zambia,37.0,16.0,35.0
-zwe,Zimbabwe,Zimbabwe,40.0,14.0,24.0
+Country code,Income Tax,Sales Tax,Corporation Tax
+afg,20,10,20
+ala,,,
+alb,23,20,15
+dza,35,19,26
+asm,,,
+and,,,
+ago,25,14,25
+aia,,,
+atg,,,
+arg,35,21,25
+arm,22,20,18
+abw,52,3,25
+aus,45,10,30
+aut,55,20,25
+aze,25,18,20
+bhs,0,12,0
+bhr,0,5,0
+bgd,25,15,32
+brb,28,17,5
+blr,13,20,18
+bel,50,21,25
+blz,,,
+ben,30,18,30
+bmu,0,,0
+btn,,,
+bol,13,13,25
+bes,,,
+bih,10,17,10
+bwa,25,12,22
+bvt,,,
+bra,27,17,34
+iot,,,
+brn,0,,18
+bgr,10,20,10
+bfa,25,18,27.5
+bdi,30,18,30
+cpv,,,
+khm,20,10,20
+cmr,35,19,33
+can,33,5,26
+cym,0,,0
+caf,40,19,30
+tcd,30,18,35
+chl,40,19,27
+chn,45,13,25
+cxr,,,
+cck,,,
+col,39,19,31
+com,,,
+cog,40,16,30
+cod,40,18,28
+cok,,,
+cri,25,9,30
+civ,60,18,25
+hrv,30,25,18
+cub,,,
+cuw,,,
+cyp,35,19,12
+cze,23,21,19
+dnk,55,25,22
+dji,,,
+dma,,,
+dom,25,18,28
+ecu,35,12,25
+egy,25,14,22
+slv,30,13,30
+gnq,35,15,35
+eri,34,5,34
+est,20,20,20
+swz,33,15,27.5
+eth,35,15,30
+flk,,,
+fro,,,
+fji,20,9,20
+fin,56,24,20
+fra,45,20,26
+guf,,,
+pyf,,,
+atf,,,
+gab,35,18,30
+gmb,30,15,27
+geo,20,18,15
+deu,45,19,30
+gha,30,13,25
+gib,,,
+grc,44,24,24
+grl,44,0,25
+grd,,,
+glp,,,
+gum,,,
+gtm,7,12,25
+ggy,,,
+gin,40,14,35
+gnb,40,17,25
+guy,,,
+hti,,,
+hmd,,,
+vat,,,
+hnd,25,15,25
+hkg,15,,16
+hun,15,27,9
+isl,46,24,20
+ind,42,18,25
+idn,30,10,22
+irn,30,9,25
+irq,15,,35
+irl,48,23,12
+imn,20,20,0
+isr,50,17,23
+ita,43,22,24
+jam,30,15,25
+jpn,55,10,30
+jey,,,
+jor,30,16,20
+kaz,10,12,20
+ken,30,16,30
+kir,,,
+prk,,,
+kor,45,10,25
+kwt,0,0,15
+kgz,10,12,10
+lao,25,10,20
+lva,31,21,20
+lbn,25,11,17
+lso,30,15,25
+lbr,,,
+lby,10,,20
+lie,22,7,12
+ltu,20,21,15
+lux,45,17,24
+mac,12,,12
+mdg,20,20,20
+mwi,30,16,30
+mys,30,10,24
+mdv,,,
+mli,30,18,30
+mlt,35,18,35
+mhl,,,
+mtq,,,
+mrt,40,16,25
+mus,15,15,15
+myt,,,
+mex,35,16,30
+fsm,,,
+mda,12,20,12
+mco,,,
+mng,10,10,25
+mne,9,21,9
+msr,,,
+mar,38,20,31
+moz,32,17,32
+mmr,25,5,25
+nam,37,15,32
+nru,,,
+npl,,,
+nld,49,21,25
+ncl,,,
+nzl,39,15,28
+nic,30,15,30
+ner,35,19,30
+nga,24,7,30
+niu,,,
+nfk,,,
+mkd,18,18,10
+mnp,,,
+nor,38,25,22
+omn,0,5,15
+pak,35,17,29
+plw,,,
+pse,,,
+pan,25,7,25
+png,42,10,30
+pry,10,10,10
+per,30,18,29
+phl,35,12,30
+pcn,,,
+pol,32,23,19
+prt,48,23,21
+pri,33,,37
+qat,0,,10
+reu,,,
+rou,10,19,16
+rus,13,20,20
+rwa,30,18,30
+blm,,,
+shn,,,
+kna,,,
+lca,,,
+maf,,,
+spm,,,
+vct,,,
+wsm,27,15,27
+smr,,,
+stp,,,
+sau,0,15,20
+sen,40,18,30
+srb,10,20,15
+syc,15,15,33
+sle,15,15,30
+sgp,22,7,17
+sxm,,,
+svk,25,20,21
+svn,50,22,19
+slb,,,
+som,30,10,12.3
+zaf,45,15,28
+sgs,,,
+ssd,20,17,35
+esp,47,21,25
+lka,24,8,24
+sdn,15,17,35
+sur,38,10,36
+sjm,,,
+swe,52,25,20
+che,40,7,14
+syr,22,,28
+twn,40,5,20
+tjk,13,18,
+tza,30,18,30
+tha,35,7,20
+tls,,,
+tgo,35,18,27
+tkl,,,
+ton,,,
+tto,25,12,30
+tun,35,19,15
+tur,40,18,25
+tkm,10,15,8
+tca,,,
+tuv,,,
+uga,40,18,30
+ukr,18,20,18
+are,0,5,0
+gbr,45,20,19
+usa,37,0,21
+umi,,,
+ury,36,22,25
+uzb,12,15,7
+vut,,,
+ven,34,16,34
+vnm,35,10,20
+vgb,,,
+vir,,,
+wlf,,,
+esh,,,
+yem,15,5,20
+zmb,37,16,35
+zwe,40,14,24
