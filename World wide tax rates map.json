@@ -52,7 +52,6 @@
 
   "projection": {
     "type": "naturalEarth1",
-    "scale": 103,
     "center": [10,0]},
   "mark": {
       "type": "geoshape",
