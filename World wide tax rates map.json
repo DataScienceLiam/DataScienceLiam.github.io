@@ -1,7 +1,7 @@
 {"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
   "title": {
-    "text": "World Map",
+    "text": "Tax rates across the World",
     "subtitle":["With tooltip (Country Names). Natural Earth Projection",""],
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
@@ -24,7 +24,15 @@
           "type": "topojson",
           "feature": "countries"}
       },
-
+"params": [
+      {"name": "Type",
+        "value": "Income Tax",
+        "bind": {
+          "input": "select",
+          "options": [
+            "Income Tax",
+            "Sales Tax",
+            "Corporation Tax"]}}],
     "transform": [
       {"calculate":"parseInt(datum.id)", "as":"id_N"},
             {
@@ -34,18 +42,17 @@
       "fields": ["alpha3", "name"],
       "data": {"url": "https://raw.githubusercontent.com/DataScienceLiam/DataScienceLiam.github.io/main/RDeconomist_dataWorldCountryNamesIDs.json"}}
       },
-{
-  "lookup": "alpha3",
-      "from": {
-      "data": {
-        "url": "https://raw.githubusercontent.com/DataScienceLiam/DataScienceLiam.github.io/main/Tax%20and%20country%20code%20data.csv"
-          },
-      "key": "Country code",
-      "fields": [
-      "Income Tax", "Sales Tax", "Corporation Tax"
-      ]
-      }
-  }
+
+        {"lookup": "alpha3",
+            "from": {
+                "data": {"url": "https://raw.githubusercontent.com/DataScienceLiam/DataScienceLiam.github.io/main/Tax%20and%20country%20code%20data.csv"},
+                "key": "Country code",
+                "fields": [       
+                    "Income Tax",
+                    "Sales Tax",
+                    "Corporation Tax"]}},
+
+          {"calculate": "datum[Type]","as": "varSelected"}
 
       
       ],    
@@ -60,13 +67,14 @@
   
   "encoding": {
  "color": {
-      "field": "Income Tax",
+      "field": "varSelected",
       "type": "quantitative",
-        "title": "Income Tax rate",
-        "scale": {"scheme": "reds", "domain":[0,60]},
+        "title": "Tax rate",
+        "scale": {"scheme": "purples"},
 "legend":{
     "orient": "bottom-left",
-    "direction": "horizontal"}},
+    "direction": "horizontal",
+    "tickCount":5}},
     
     "tooltip":[{"field":"name", "title": "Country"},
 {"field":"Income Tax", "title": "Income Tax"},
