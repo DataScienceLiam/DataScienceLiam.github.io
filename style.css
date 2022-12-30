@@ -122,7 +122,7 @@ h7 {
   margin-top: 0.3em !important;
   font-size: 1em;
   width: 80% !important;
-  max-width: 1000px;
+  max-width: 800px;
 
 }
 
@@ -257,11 +257,12 @@ title1{
   border-width: .2em;
   border-radius: .5em;
   text-align: center;
-  padding: 0.2em  !important;
+  padding: 0.1em  !important;
   min-width: 98%;
-  min-width: 280px;
+  min-width: 250px;
 
 }
+
 
 .a_container {
   display: inline-table;
@@ -290,6 +291,17 @@ title1{
 
 }
 
+.a_container2 {
+  display: block;
+  flex-flow: row wrap;
+  justify-content: center;
+  text-align: center;
+  margin-top: 0px;
+  margin: auto;
+  min-width: 280px;
+  height: 100%;
+
+}
 
 
 .container_grid {
@@ -346,6 +358,8 @@ title1{
 }
 
 h8  {margin-top: -0.8em !important;}
+
+h7 {width: 92% !important}
 
 }
 
@@ -416,7 +430,7 @@ h8  {margin-top: -0.8em !important;}
   }
 
  .chart1 {
-   min-width: 98%;
+   max-width: 98%;
    padding: 0px;
  }
 
@@ -426,6 +440,10 @@ h8  {margin-top: -0.8em !important;}
  }
   .a_container1 {
     width: 80%;
+ }
+
+  .a_container2 {
+    width: 70%;
  }
 .a_container {
   width: 48%;
@@ -443,6 +461,10 @@ h8  {margin-top: -0.8em !important;}
 @media only screen and (min-width: 1000px){
     .a_container1 {
         width: 68%;
+      }
+
+    .a_container2 {
+        width:60%;
       }
 .text_container {
   display: none;
@@ -462,6 +484,10 @@ h8  {margin-top: -0.8em !important;}
     width: 65%;
     max-width: 880px;
  }
+  .a_container2 {
+    width: 60%;
+    max-width: 880px;
+}
 .text_container {
   display: none;
 }
@@ -475,5 +501,9 @@ h8  {margin-top: -0.8em !important;}
     width: 55%;
     max-width: 880px;
   }
+  .a_container2 {
+    width: 50%;
+    max-width: 880px;
+}
 }
 

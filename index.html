@@ -290,7 +290,45 @@
     </script>
   </div>
 </container>
+
+
+<h5>Week 10: Machine Learning - Unsupervised</h5>
+
+<div>
+  <h7>The Human development index is based on life expectancy, education and GNI per capita. There are 4 tiers, low,
+    medium, high, and very high. By performing K-means clustering with an Education index and Log of Tax per capita I
+    would expect to be able to identify these tiers. <h7>
 </div>
 
-<h5>Week 10: Machine Learning</h5>
+<container class="a_container2">
+  <div class="chart1" id="chart27">
+    <img src="HDI Clusters.png" alt="K means clustering to predict HDI tier" style="width:90%;height:auto;">
+  </div>
+</container>
+
+<div>
+  <h7>While the data follows a trend, there are not obviously distinct clusters. Nevertheless, out of curiosity I 
+    compared the cluster predictions to the real tiers and found that it was 72% accurate.<h7>
+</div>
+
+
+<h5>Week 11: Machine Learning - Supervised</h5>
+
+<div>
+  <h7>I expect a strong correlation between HDI and the Log of Tax per Capita as countries 
+    paying more tax per capita should have more funds for development.<h7>
+</div>
+
+<container class="a_container2">
+    <div class="chart1" id="chart26">
+      <img src="HDI vs Tax per capita.png" alt="Regression of HDI vs the Log of Tax per Capita" style="width:90%;height:auto;">
+  </div>
+</container>
+<div>
+  <h7>The regression confirms my hypothesis, there is a strong correlation between HDI and the Log of Tax per capita.<h7>
+</div>
+
+
+</div>
+
 </html>
