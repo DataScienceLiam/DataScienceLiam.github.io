@@ -24,14 +24,14 @@
     "encoding": {
         "x": {
             "field": "Year",
-            "type": "nominal",
+            "type": "ordinal",
             "axis": {
                 "title": null,
                 "labelAngle": 45,
                 "ticks": true,
                 "tickWidth": 1.3,
                 "tickColor": "grey",
-                "values": [1984, 1990,1995, 2000,2005, 2010,2015,2020]
+                "values": ["1984", "1990","1995", "2000","2005", "2010","2015","2020"]
             }
         },
         "y": {

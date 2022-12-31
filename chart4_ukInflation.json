@@ -1,7 +1,7 @@
 {
   "title": {
     "text": "Inflation - UK",
-    "subtitle": "CPI, % change over 12 months ",
+    "subtitle": "CPI, % change over 12 months, Source: ONS (D7G7)",
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
     "anchor": "start",

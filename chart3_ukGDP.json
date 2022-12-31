@@ -11,7 +11,7 @@
 
   "title": {
   "text": "The size of the UK economy - interactive",
-  "subtitle": "Nominal GDP, quarterly. Source: ONS (YBHA)",
+  "subtitle": "At market prices, quarterly. Source: ONS (YBHA)",
   "subtitleFontStyle":"italic",
   "subtitleFontSize":10,
   "anchor": "start",
@@ -50,10 +50,10 @@
   ],
 
   "params": [    
-    {"name":"minYear", "value":1955,
+    {"name":"minYear", "value":1954,
        "bind":{
          "input": "range",
-         "min": 1955, 
+         "min": 1954, 
          "max": 2020, 
          "step": 1,
          "name": "Start year:"}
