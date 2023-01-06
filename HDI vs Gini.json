@@ -1,0 +1,105 @@
+{ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+    "title": {
+      "text": "Gini coefficent vs HDI",
+      "subtitle":["Size of points based on popluation","Source: World Bank"],
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black"
+    },
+
+  "config": {
+    "background":"white",
+    "view": {
+      "stroke": "transparent"}},
+  
+    "data": {
+      "url": "https://raw.githubusercontent.com/DataScienceLiam/DataScienceLiam.github.io/main/HDI%20vs%20Gini%20data.json",
+      "format":{"type":"json"}},
+    "height": 306,
+    "width": "container",
+
+
+"layer":[
+  {  "mark": {
+      "type":"circle", "color":"#FFBC00",
+      "opacity":0.6},
+    
+  
+    "encoding": {
+      "x": {
+        "field": "HDI", 
+        "type": "quantitative",
+        "scale": {"domain": [0.3, 1]},
+        "axis":{"grid": false},
+        "title":"HDI"},
+  
+      "y": {
+        "field": "Gini coefficent - World Bank", 
+        "title": "Gini coefficent, %",
+        "type": "quantitative",
+        "scale": {"domainMax":80, "type": "linear"},
+        "axis":{"grid": false}},
+  
+      "size": {
+        "field": "Population", 
+        "type": "quantitative",
+        "scale":{"range":[40,1500]},
+        "title":"Population",
+        "legend":null},
+      
+          "tooltip":[
+        {"field":"Country", "type": "ordinal", "title":"Country"},
+        {"field":"Gini coefficent - World Bank", "type": "quantitative", "title":"Gini coefficent, %", "format":".2f"},
+        {"field":"HDI", "type": "quantitative", "title":"HCI", "format":".2f"},
+        {"field":"Population", "type": "quantitative", "title":"Population", "format":","}
+
+      ]
+}},
+
+  {
+      "mark": {
+        "type": "line",
+        "color": "#000000"
+      },
+      "transform": [
+        {
+          "regression": "Gini coefficent - World Bank",
+          "method": "linear",
+          "on": "HDI"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "HDI",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Gini coefficent - World Bank",
+          "type": "quantitative",
+          "scale":{"type": "linear"}
+        }
+      }},
+
+    {
+      "transform": [
+        {
+          "regression": "Gini coefficent - World Bank",
+          "on": "HDI",
+          "method": "linear",
+          "params": true
+        },
+        {"calculate": "'R²: '+format(datum.rSquared, '.2f')", "as": "R2"}
+      ],
+      "mark": {
+        "type": "text",
+        "color": "#000000",
+        "x": "width",
+        "align": "right",
+        "y": 130
+      },
+      "encoding": {"text": {"type": "nominal", "field": "R2"}}}
+]
+}
+

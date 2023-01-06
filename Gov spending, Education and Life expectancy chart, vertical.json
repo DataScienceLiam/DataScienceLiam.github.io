@@ -1,0 +1,173 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Impacts of government spending on society",
+    "subtitle": ["Size of points based on GDP", "Source: UN"],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/DataScienceLiam/DataScienceLiam.github.io/main/Gov%20spending%2C%20Education%20and%20Life%20expectancy.json",
+    "format": {"type": "json"}
+  },
+  "vconcat": [
+    {
+      "layer": [
+        {
+          "width": 200,
+          "height": 200,
+          "mark": {"type": "circle", "color": "#1E2F97", "opacity": 0.5},
+          "encoding": {
+            "x": {"field": "Education index", "type": "quantitative"},
+            "y": {"field": "Spending per Capita", "type": "quantitative"},
+            "size": {
+              "field": "GDP",
+              "type": "quantitative",
+              "scale": {"range": [25, 350]},
+              "title": "GDP",
+              "legend": null
+            },
+            "tooltip": [
+              {"field": "Country", "type": "ordinal", "title": "Country"},
+              {
+                "field": "GDP",
+                "type": "quantitative",
+                "title": "GDP",
+                "format": "$,.5r"
+              },
+              {
+                "field": "Education index",
+                "type": "quantitative",
+                "title": "Education index",
+                "format": "0.2f"
+              },
+              {
+                "field": "Spending per Capita",
+                "type": "quantitative",
+                "title": "Spending per Capita",
+                "format": "$,.4r"
+              }
+            ]
+          }
+        },
+        {
+          "mark": {"type": "line", "color": "#000000"},
+          "transform": [
+            {
+              "regression": "Spending per Capita",
+              "method": "exp",
+              "on": "Education index"
+            }
+          ],
+          "encoding": {
+            "x": {"field": "Education index", "type": "quantitative"},
+            "y": {"field": "Spending per Capita", "type": "quantitative"}
+          }
+        },
+        {
+          "transform": [
+            {
+              "regression": "Spending per Capita",
+              "on": "Education index",
+              "method": "exp",
+              "params": true
+            },
+            {"calculate": "'R²: '+format(datum.rSquared, '.2f')", "as": "R2"}
+          ],
+          "mark": {
+            "type": "text",
+            "color": "#1E2F97",
+            "xOffset": 56,
+            "align": "center",
+            "y": 50
+          },
+          "encoding": {"text": {"type": "nominal", "field": "R2"}}
+        }
+      ]
+    },
+    {
+      "layer": [
+        {
+          "width": 200,
+          "height": 200,
+          "mark": {"type": "circle", "color": "#0b6d63", "opacity": 0.6},
+          "encoding": {
+            "x": {
+              "field": "Life expectancy",
+              "type": "quantitative",
+              "title": "Life expectancy at birth, years",
+              "scale": {"domain": [50, 90]}
+            },
+            "y": {
+              "field": "Spending per Capita",
+              "type": "quantitative"
+            },
+            "size": {
+              "field": "GDP",
+              "type": "quantitative",
+              "scale": {"range": [25, 350]},
+              "title": "GDP",
+              "legend": null
+            },
+            "tooltip": [
+              {"field": "Country", "type": "ordinal", "title": "Country"},
+              {
+                "field": "GDP",
+                "type": "quantitative",
+                "title": "GDP",
+                "format": "$,.5r"
+              },
+              {
+                "field": "Life expectancy",
+                "type": "quantitative",
+                "title": "Life expectancy, years",
+                "format": "0.2f"
+              },
+              {
+                "field": "Spending per Capita",
+                "type": "quantitative",
+                "title": "Spending per Capita",
+                "format": "$,.4r"
+              }
+            ]
+          }
+        },
+        {
+          "mark": {"type": "line", "color": "#000000"},
+          "transform": [
+            {
+              "regression": "Spending per Capita",
+              "method": "exp",
+              "on": "Life expectancy"
+            }
+          ],
+          "encoding": {
+            "x": {"field": "Life expectancy", "type": "quantitative"},
+            "y": {"field": "Spending per Capita", "type": "quantitative"}
+          }
+        },
+        {
+          "transform": [
+            {
+              "regression": "Spending per Capita",
+              "on": "Life expectancy",
+              "method": "exp",
+              "params": true
+            },
+            {"calculate": "'R²: '+format(datum.rSquared, '.2f')", "as": "R2"}
+          ],
+          "mark": {
+            "type": "text",
+            "color": "#0b6d63",
+            "xOffset": 115,
+            "align": "right",
+            "y": 50
+          },
+          "encoding": {"text": {"type": "nominal", "field": "R2"}}
+        }
+      ]
+    }
+  ]
+}

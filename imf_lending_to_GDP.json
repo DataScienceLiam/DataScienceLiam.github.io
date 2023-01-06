@@ -39,9 +39,10 @@
             "type": "quantitative",
             "title": null,
             "axis": {
-                "grid": false
+                "grid": false,
+                "format": "0.1%"
             }
         },
-    "tooltip": {"field": "Debt-GDP", "type": "quantitative", "title":"Debt-GDP"}
+    "tooltip": {"field": "Debt-GDP", "type": "quantitative","format":"0.1%", "title":"Debt-GDP"}
     }
 }
