@@ -302,7 +302,9 @@ title1{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  grid-gap: 3px;
+  grid-gap: 3px !important;
+  border-width: 0em !important;
+  border-radius: 0em !important;
   justify-content: center !important;
   vertical-align: bottom;
   text-align: center !important;
@@ -317,8 +319,8 @@ title1{
 
 .chart_grid {
   background-color: white;
-  border-width: .2em;
-  border-radius: .5em;
+  border-width: 0em !important;
+  border-radius: 0em !important;
   height: 330px;
   min-width: 100%;
   text-align: center;
@@ -341,6 +343,9 @@ title1{
     display: block !important;
     }
 
+.chart_grid {
+    margin-bottom: 2px !important;
+}
 .text_container_1 {
   display: none;
 }
@@ -391,7 +396,7 @@ h7 {width: 92% !important}
   margin-right: 0%;
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-gap: 1.5px;
+  grid-gap: 3px !important;
   margin-bottom: 0px !important;
   margin-top: 0px !important;
 

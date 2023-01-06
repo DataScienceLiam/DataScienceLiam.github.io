@@ -5,7 +5,7 @@
     "subtitle": ["Source: spotrac"],
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
-    "anchor": "middle",
+    "anchor": "start",
     "color": "black"
   },
     "data": {
