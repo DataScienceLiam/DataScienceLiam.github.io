@@ -269,7 +269,7 @@
                     "field": "Tax_revenue",
                     "type": "quantitative",
                     "format": ",.2%",
-                    "title": "OECD average tax as % of GDP"
+                    "title": "OECD average"
                   }
                 ]
               },
