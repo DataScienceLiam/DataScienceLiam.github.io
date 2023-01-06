@@ -1,0 +1,896 @@
+[
+  {
+    "country": "Ivory Coast",
+    "incomeTax": 60,
+    "salesTax": 18,
+    "corpTax": 25
+  },
+  {
+    "country": "Finland",
+    "incomeTax": 56,
+    "salesTax": 24,
+    "corpTax": 20
+  },
+  {
+    "country": "Japan",
+    "incomeTax": 55,
+    "salesTax": 10,
+    "corpTax": 30
+  },
+  {
+    "country": "Austria",
+    "incomeTax": 55,
+    "salesTax": 20,
+    "corpTax": 25
+  },
+  {
+    "country": "Denmark",
+    "incomeTax": 55,
+    "salesTax": 25,
+    "corpTax": 22
+  },
+  {
+    "country": "Sweden",
+    "incomeTax": 52,
+    "salesTax": 25,
+    "corpTax": 20
+  },
+  {
+    "country": "Aruba",
+    "incomeTax": 52,
+    "salesTax": 3,
+    "corpTax": 25
+  },
+  {
+    "country": "Belgium",
+    "incomeTax": 50,
+    "salesTax": 21,
+    "corpTax": 25
+  },
+  {
+    "country": "Israel",
+    "incomeTax": 50,
+    "salesTax": 17,
+    "corpTax": 23
+  },
+  {
+    "country": "Slovenia",
+    "incomeTax": 50,
+    "salesTax": 22,
+    "corpTax": 19
+  },
+  {
+    "country": "Netherlands",
+    "incomeTax": 49,
+    "salesTax": 21,
+    "corpTax": 25
+  },
+  {
+    "country": "Portugal",
+    "incomeTax": 48,
+    "salesTax": 23,
+    "corpTax": 21
+  },
+  {
+    "country": "Ireland",
+    "incomeTax": 48,
+    "salesTax": 23,
+    "corpTax": 12
+  },
+  {
+    "country": "Spain",
+    "incomeTax": 47,
+    "salesTax": 21,
+    "corpTax": 25
+  },
+  {
+    "country": "Iceland",
+    "incomeTax": 46,
+    "salesTax": 24,
+    "corpTax": 20
+  },
+  {
+    "country": "China",
+    "incomeTax": 45,
+    "salesTax": 13,
+    "corpTax": 25
+  },
+  {
+    "country": "Germany",
+    "incomeTax": 45,
+    "salesTax": 19,
+    "corpTax": 30
+  },
+  {
+    "country": "United Kingdom",
+    "incomeTax": 45,
+    "salesTax": 20,
+    "corpTax": 19
+  },
+  {
+    "country": "France",
+    "incomeTax": 45,
+    "salesTax": 20,
+    "corpTax": 26
+  },
+  {
+    "country": "South Africa",
+    "incomeTax": 45,
+    "salesTax": 15,
+    "corpTax": 28
+  },
+  {
+    "country": "South Korea",
+    "incomeTax": 45,
+    "salesTax": 10,
+    "corpTax": 25
+  },
+  {
+    "country": "Australia",
+    "incomeTax": 45,
+    "salesTax": 10,
+    "corpTax": 30
+  },
+  {
+    "country": "Luxembourg",
+    "incomeTax": 45,
+    "salesTax": 17,
+    "corpTax": 24
+  },
+  {
+    "country": "Greece",
+    "incomeTax": 44,
+    "salesTax": 24,
+    "corpTax": 24
+  },
+  {
+    "country": "Italy",
+    "incomeTax": 43,
+    "salesTax": 22,
+    "corpTax": 24
+  },
+  {
+    "country": "India",
+    "incomeTax": 42,
+    "salesTax": 18,
+    "corpTax": 25
+  },
+  {
+    "country": "Papua New Guinea",
+    "incomeTax": 42,
+    "salesTax": 10,
+    "corpTax": 30
+  },
+  {
+    "country": "Turkey",
+    "incomeTax": 40,
+    "salesTax": 18,
+    "corpTax": 25
+  },
+  {
+    "country": "Uganda",
+    "incomeTax": 40,
+    "salesTax": 18,
+    "corpTax": 30
+  },
+  {
+    "country": "Taiwan",
+    "incomeTax": 40,
+    "salesTax": 5,
+    "corpTax": 20
+  },
+  {
+    "country": "Chile",
+    "incomeTax": 40,
+    "salesTax": 19,
+    "corpTax": 27
+  },
+  {
+    "country": "Senegal",
+    "incomeTax": 40,
+    "salesTax": 18,
+    "corpTax": 30
+  },
+  {
+    "country": "Zimbabwe",
+    "incomeTax": 40,
+    "salesTax": 14,
+    "corpTax": 24
+  },
+  {
+    "country": "Guinea",
+    "incomeTax": 40,
+    "salesTax": 14,
+    "corpTax": 35
+  },
+  {
+    "country": "Switzerland",
+    "incomeTax": 40,
+    "salesTax": 7,
+    "corpTax": 14
+  },
+  {
+    "country": "Republic of the Congo",
+    "incomeTax": 40,
+    "salesTax": 18,
+    "corpTax": 28
+  },
+  {
+    "country": "Mauritania",
+    "incomeTax": 40,
+    "salesTax": 16,
+    "corpTax": 25
+  },
+  {
+    "country": "Colombia",
+    "incomeTax": 39,
+    "salesTax": 19,
+    "corpTax": 31
+  },
+  {
+    "country": "New Zealand",
+    "incomeTax": 39,
+    "salesTax": 15,
+    "corpTax": 28
+  },
+  {
+    "country": "Morocco",
+    "incomeTax": 38,
+    "salesTax": 20,
+    "corpTax": 31
+  },
+  {
+    "country": "Norway",
+    "incomeTax": 38,
+    "salesTax": 25,
+    "corpTax": 22
+  },
+  {
+    "country": "Suriname",
+    "incomeTax": 38,
+    "salesTax": 10,
+    "corpTax": 36
+  },
+  {
+    "country": "United States",
+    "incomeTax": 37,
+    "salesTax": 0,
+    "corpTax": 21
+  },
+  {
+    "country": "Zambia",
+    "incomeTax": 37,
+    "salesTax": 16,
+    "corpTax": 35
+  },
+  {
+    "country": "Namibia",
+    "incomeTax": 37,
+    "salesTax": 15,
+    "corpTax": 32
+  },
+  {
+    "country": "Uruguay",
+    "incomeTax": 36,
+    "salesTax": 22,
+    "corpTax": 25
+  },
+  {
+    "country": "Pakistan",
+    "incomeTax": 35,
+    "salesTax": 17,
+    "corpTax": 29
+  },
+  {
+    "country": "Mexico",
+    "incomeTax": 35,
+    "salesTax": 16,
+    "corpTax": 30
+  },
+  {
+    "country": "Ethiopia",
+    "incomeTax": 35,
+    "salesTax": 15,
+    "corpTax": 30
+  },
+  {
+    "country": "Philippines",
+    "incomeTax": 35,
+    "salesTax": 12,
+    "corpTax": 30
+  },
+  {
+    "country": "Vietnam",
+    "incomeTax": 35,
+    "salesTax": 10,
+    "corpTax": 20
+  },
+  {
+    "country": "Thailand",
+    "incomeTax": 35,
+    "salesTax": 7,
+    "corpTax": 20
+  },
+  {
+    "country": "Argentina",
+    "incomeTax": 35,
+    "salesTax": 21,
+    "corpTax": 25
+  },
+  {
+    "country": "Algeria",
+    "incomeTax": 35,
+    "salesTax": 19,
+    "corpTax": 26
+  },
+  {
+    "country": "Cameroon",
+    "incomeTax": 35,
+    "salesTax": 19,
+    "corpTax": 33
+  },
+  {
+    "country": "Ecuador",
+    "incomeTax": 35,
+    "salesTax": 12,
+    "corpTax": 25
+  },
+  {
+    "country": "Tunisia",
+    "incomeTax": 35,
+    "salesTax": 19,
+    "corpTax": 15
+  },
+  {
+    "country": "Gabon",
+    "incomeTax": 35,
+    "salesTax": 18,
+    "corpTax": 30
+  },
+  {
+    "country": "Equatorial Guinea",
+    "incomeTax": 35,
+    "salesTax": 15,
+    "corpTax": 35
+  },
+  {
+    "country": "Cyprus",
+    "incomeTax": 35,
+    "salesTax": 19,
+    "corpTax": 12
+  },
+  {
+    "country": "Malta",
+    "incomeTax": 35,
+    "salesTax": 18,
+    "corpTax": 35
+  },
+  {
+    "country": "Venezuela",
+    "incomeTax": 34,
+    "salesTax": 16,
+    "corpTax": 34
+  },
+  {
+    "country": "Canada",
+    "incomeTax": 33,
+    "salesTax": 5,
+    "corpTax": 26
+  },
+  {
+    "country": "Puerto Rico",
+    "incomeTax": 33,
+    "corpTax": 37
+  },
+  {
+    "country": "Poland",
+    "incomeTax": 32,
+    "salesTax": 23,
+    "corpTax": 19
+  },
+  {
+    "country": "Mozambique",
+    "incomeTax": 32,
+    "salesTax": 17,
+    "corpTax": 32
+  },
+  {
+    "country": "Latvia",
+    "incomeTax": 31,
+    "salesTax": 21,
+    "corpTax": 20
+  },
+  {
+    "country": "Indonesia",
+    "incomeTax": 30,
+    "salesTax": 10,
+    "corpTax": 22
+  },
+  {
+    "country": "Tanzania",
+    "incomeTax": 30,
+    "salesTax": 18,
+    "corpTax": 30
+  },
+  {
+    "country": "Kenya",
+    "incomeTax": 30,
+    "salesTax": 16,
+    "corpTax": 30
+  },
+  {
+    "country": "Peru",
+    "incomeTax": 30,
+    "salesTax": 18,
+    "corpTax": 29
+  },
+  {
+    "country": "Malaysia",
+    "incomeTax": 30,
+    "salesTax": 10,
+    "corpTax": 24
+  },
+  {
+    "country": "Ghana",
+    "incomeTax": 30,
+    "salesTax": 13,
+    "corpTax": 25
+  },
+  {
+    "country": "Malawi",
+    "incomeTax": 30,
+    "salesTax": 16,
+    "corpTax": 30
+  },
+  {
+    "country": "Chad",
+    "incomeTax": 30,
+    "salesTax": 18,
+    "corpTax": 35
+  },
+  {
+    "country": "Rwanda",
+    "incomeTax": 30,
+    "salesTax": 18,
+    "corpTax": 30
+  },
+  {
+    "country": "Jordan",
+    "incomeTax": 30,
+    "salesTax": 16,
+    "corpTax": 20
+  },
+  {
+    "country": "Nicaragua",
+    "incomeTax": 30,
+    "salesTax": 15,
+    "corpTax": 30
+  },
+  {
+    "country": "El Salvador",
+    "incomeTax": 30,
+    "salesTax": 13,
+    "corpTax": 30
+  },
+  {
+    "country": "Croatia",
+    "incomeTax": 30,
+    "salesTax": 25,
+    "corpTax": 18
+  },
+  {
+    "country": "Jamaica",
+    "incomeTax": 30,
+    "salesTax": 15,
+    "corpTax": 25
+  },
+  {
+    "country": "Gambia",
+    "incomeTax": 30,
+    "salesTax": 15,
+    "corpTax": 27
+  },
+  {
+    "country": "Lesotho",
+    "incomeTax": 30,
+    "salesTax": 15,
+    "corpTax": 25
+  },
+  {
+    "country": "Barbados",
+    "incomeTax": 28,
+    "salesTax": 17,
+    "corpTax": 5
+  },
+  {
+    "country": "Brazil",
+    "incomeTax": 27,
+    "salesTax": 17,
+    "corpTax": 34
+  },
+  {
+    "country": "Samoa",
+    "incomeTax": 27,
+    "salesTax": 15,
+    "corpTax": 27
+  },
+  {
+    "country": "Bangladesh",
+    "incomeTax": 25,
+    "salesTax": 15,
+    "corpTax": 32
+  },
+  {
+    "country": "Egypt",
+    "incomeTax": 25,
+    "salesTax": 14,
+    "corpTax": 22
+  },
+  {
+    "country": "Myanmar",
+    "incomeTax": 25,
+    "salesTax": 5,
+    "corpTax": 25
+  },
+  {
+    "country": "Angola",
+    "incomeTax": 25,
+    "salesTax": 14,
+    "corpTax": 25
+  },
+  {
+    "country": "Dominican Republic",
+    "incomeTax": 25,
+    "salesTax": 18,
+    "corpTax": 28
+  },
+  {
+    "country": "Honduras",
+    "incomeTax": 25,
+    "salesTax": 15,
+    "corpTax": 25
+  },
+  {
+    "country": "Azerbaijan",
+    "incomeTax": 25,
+    "salesTax": 18,
+    "corpTax": 20
+  },
+  {
+    "country": "Laos",
+    "incomeTax": 25,
+    "salesTax": 10,
+    "corpTax": 20
+  },
+  {
+    "country": "Slovakia",
+    "incomeTax": 25,
+    "salesTax": 20,
+    "corpTax": 21
+  },
+  {
+    "country": "Lebanon",
+    "incomeTax": 25,
+    "salesTax": 11,
+    "corpTax": 17
+  },
+  {
+    "country": "Costa Rica",
+    "incomeTax": 25,
+    "salesTax": 9,
+    "corpTax": 30
+  },
+  {
+    "country": "Panama",
+    "incomeTax": 25,
+    "salesTax": 7,
+    "corpTax": 25
+  },
+  {
+    "country": "Botswana",
+    "incomeTax": 25,
+    "salesTax": 12,
+    "corpTax": 22
+  },
+  {
+    "country": "Trinidad And Tobago",
+    "incomeTax": 25,
+    "salesTax": 12,
+    "corpTax": 30
+  },
+  {
+    "country": "Nigeria",
+    "incomeTax": 24,
+    "salesTax": 7,
+    "corpTax": 30
+  },
+  {
+    "country": "Sri Lanka",
+    "incomeTax": 24,
+    "salesTax": 8,
+    "corpTax": 24
+  },
+  {
+    "country": "Czech Republic",
+    "incomeTax": 23,
+    "salesTax": 21,
+    "corpTax": 19
+  },
+  {
+    "country": "Albania",
+    "incomeTax": 23,
+    "salesTax": 20,
+    "corpTax": 15
+  },
+  {
+    "country": "Syria",
+    "incomeTax": 22,
+    "corpTax": 28
+  },
+  {
+    "country": "Singapore",
+    "incomeTax": 22,
+    "salesTax": 7,
+    "corpTax": 17
+  },
+  {
+    "country": "Armenia",
+    "incomeTax": 22,
+    "salesTax": 20,
+    "corpTax": 18
+  },
+  {
+    "country": "Liechtenstein",
+    "incomeTax": 22,
+    "salesTax": 7,
+    "corpTax": 12
+  },
+  {
+    "country": "Afghanistan",
+    "incomeTax": 20,
+    "salesTax": 10,
+    "corpTax": 20
+  },
+  {
+    "country": "Madagascar",
+    "incomeTax": 20,
+    "salesTax": 20,
+    "corpTax": 20
+  },
+  {
+    "country": "Cambodia",
+    "incomeTax": 20,
+    "salesTax": 10,
+    "corpTax": 20
+  },
+  {
+    "country": "Georgia",
+    "incomeTax": 20,
+    "salesTax": 18,
+    "corpTax": 15
+  },
+  {
+    "country": "Lithuania",
+    "incomeTax": 20,
+    "salesTax": 21,
+    "corpTax": 15
+  },
+  {
+    "country": "Estonia",
+    "incomeTax": 20,
+    "salesTax": 20,
+    "corpTax": 20
+  },
+  {
+    "country": "Fiji",
+    "incomeTax": 20,
+    "salesTax": 9,
+    "corpTax": 20
+  },
+  {
+    "country": "Isle of Man",
+    "incomeTax": 20,
+    "salesTax": 20,
+    "corpTax": 0
+  },
+  {
+    "country": "Ukraine",
+    "incomeTax": 18,
+    "salesTax": 20,
+    "corpTax": 18
+  },
+  {
+    "country": "Sudan",
+    "incomeTax": 15,
+    "salesTax": 17,
+    "corpTax": 35
+  },
+  {
+    "country": "Iraq",
+    "incomeTax": 15,
+    "corpTax": 35
+  },
+  {
+    "country": "Yemen",
+    "incomeTax": 15,
+    "salesTax": 5,
+    "corpTax": 20
+  },
+  {
+    "country": "Hungary",
+    "incomeTax": 15,
+    "salesTax": 27,
+    "corpTax": 9
+  },
+  {
+    "country": "Sierra Leone",
+    "incomeTax": 15,
+    "salesTax": 15,
+    "corpTax": 30
+  },
+  {
+    "country": "Hong Kong",
+    "incomeTax": 15,
+    "corpTax": 16
+  },
+  {
+    "country": "Mauritius",
+    "incomeTax": 15,
+    "salesTax": 15,
+    "corpTax": 15
+  },
+  {
+    "country": "Seychelles",
+    "incomeTax": 15,
+    "salesTax": 15,
+    "corpTax": 33
+  },
+  {
+    "country": "Russia",
+    "incomeTax": 13,
+    "salesTax": 20,
+    "corpTax": 20
+  },
+  {
+    "country": "Bolivia",
+    "incomeTax": 13,
+    "salesTax": 13,
+    "corpTax": 25
+  },
+  {
+    "country": "Tajikistan",
+    "incomeTax": 13,
+    "salesTax": 18
+  },
+  {
+    "country": "Belarus",
+    "incomeTax": 13,
+    "salesTax": 20,
+    "corpTax": 18
+  },
+  {
+    "country": "Uzbekistan",
+    "incomeTax": 12,
+    "salesTax": 15,
+    "corpTax": 7
+  },
+  {
+    "country": "Moldova",
+    "incomeTax": 12,
+    "salesTax": 20,
+    "corpTax": 12
+  },
+  {
+    "country": "Macau",
+    "incomeTax": 12,
+    "corpTax": 12
+  },
+  {
+    "country": "Romania",
+    "incomeTax": 10,
+    "salesTax": 19,
+    "corpTax": 16
+  },
+  {
+    "country": "Kazakhstan",
+    "incomeTax": 10,
+    "salesTax": 12,
+    "corpTax": 20
+  },
+  {
+    "country": "Serbia",
+    "incomeTax": 10,
+    "salesTax": 20,
+    "corpTax": 15
+  },
+  {
+    "country": "Libya",
+    "incomeTax": 10,
+    "corpTax": 20
+  },
+  {
+    "country": "Bulgaria",
+    "incomeTax": 10,
+    "salesTax": 20,
+    "corpTax": 10
+  },
+  {
+    "country": "Mongolia",
+    "incomeTax": 10,
+    "salesTax": 10,
+    "corpTax": 25
+  },
+  {
+    "country": "Bosnia and Herzegovina",
+    "incomeTax": 10,
+    "salesTax": 17,
+    "corpTax": 10
+  },
+  {
+    "country": "Montenegro",
+    "incomeTax": 9,
+    "salesTax": 21,
+    "corpTax": 9
+  },
+  {
+    "country": "Guatemala",
+    "incomeTax": 7,
+    "salesTax": 12,
+    "corpTax": 25
+  },
+  {
+    "country": "Saudi Arabia",
+    "incomeTax": 0,
+    "salesTax": 15,
+    "corpTax": 20
+  },
+  {
+    "country": "United Arab Emirates",
+    "incomeTax": 0,
+    "salesTax": 5,
+    "corpTax": 0
+  },
+  {
+    "country": "Oman",
+    "incomeTax": 0,
+    "salesTax": 5,
+    "corpTax": 15
+  },
+  {
+    "country": "Kuwait",
+    "incomeTax": 0,
+    "corpTax": 15
+  },
+  {
+    "country": "Qatar",
+    "incomeTax": 0,
+    "corpTax": 10
+  },
+  {
+    "country": "Bahrain",
+    "incomeTax": 0,
+    "salesTax": 5,
+    "corpTax": 0
+  },
+  {
+    "country": "Brunei",
+    "incomeTax": 0,
+    "corpTax": 18
+  },
+  {
+    "country": "Bahamas",
+    "incomeTax": 0,
+    "salesTax": 12,
+    "corpTax": 0
+  },
+  {
+    "country": "Cayman Islands",
+    "incomeTax": 0,
+    "corpTax": 0
+  },
+  {
+    "country": "Bermuda",
+    "incomeTax": 0,
+    "corpTax": 0
+  }
+]

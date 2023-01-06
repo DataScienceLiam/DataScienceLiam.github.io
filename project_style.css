@@ -1,0 +1,620 @@
+/* Data Science for Economists - 2022 - Liam Bedwell */
+
+
+/* Import a font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+/* Code for the navigation bar found on W3Schools */
+
+
+/* Set the background color for my page: */
+body{
+    background-color: #024a67;
+    margin: auto;
+    width: auto;
+    overflow:scroll;
+    padding-top: 1em;
+    max-width: 98%;
+    min-width: 280px;
+    margin-bottom: 1em;
+ 
+}
+
+
+.topnav {
+    overflow: hidden;
+    display: flex;
+    background-color: #9BAEBC;
+    text-align: center;
+    justify-content: left;
+    list-style: none;
+    width: 100%;
+    min-width: 280px;
+    margin-top: .34em !important;
+        
+
+
+  }
+  
+  .topnav a {
+    float: left;
+    list-style-type: none;
+    color: #f2f2f2;
+    text-align: center;
+    padding-top: clamp(0.5em,3%,1.5em);
+    padding-bottom: clamp(0.5em,3%,1.5em);
+    text-decoration: none;
+    font-size: 1.1em;
+    font-family: 'Nunito', sans-serif;
+    cursor: pointer;
+    width: 25%;
+
+
+  }
+  
+  .topnav a:hover {
+    background-color: #566571;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color:#687987;
+    color: white;
+  }
+
+
+/* Choose the appearance of the tags, h1, h3 and p: */
+
+h1{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 2.2em;
+}
+
+h2{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin-top: 1.88em;
+    margin-bottom: 0;
+    font-size: 1.2em;
+    width:100%;
+
+}
+
+
+h5 { /*same as h2, different top margin for rest of headings*/
+  color: white; 
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  margin-top: 1.88em;
+  margin-bottom: 0.5em;
+  font-size: 1.2em;
+  width: 100%;
+
+}
+
+h6 {
+  /*Use for chart title*/
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  display: block;
+  margin-bottom: 0.1em;
+  margin-left: 3.9%;
+  align-items: center;
+  margin-top: 0em !important;
+  font-size: 1em;
+  width: 92%;
+
+}
+
+h7 {
+  /*Descriptions*/
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  display: block;
+  margin-bottom: 0.1em !important;
+  margin: auto;
+  text-align: center !important;
+  align-items: center;
+  margin-top: 0.3em !important;
+  font-size: 1em;
+  width: 80% !important;
+  max-width: 800px;
+
+}
+
+h8 {
+  /*Descriptions*/
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  display: block;
+  margin-bottom: 0.1em;
+  margin-left: 3.7%;
+  text-align: center;
+  align-items: center;
+  margin-top: 0.3em !important;
+  font-size: 1em;
+  width: 92%;
+  max-width: 1200px;
+
+}
+
+h9 {
+  /*Descriptions*/
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  display: block;
+  margin-bottom: 0.1em !important;
+  margin: auto;
+  text-align: center !important;
+  align-items: center;
+  margin-top: 0.75em !important;
+  font-size: 1em;
+  width: 80% !important;
+  max-width: 800px;
+
+}
+
+h10 {
+  /*Descriptions*/
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  display: block;
+  margin-bottom: 0.1em;
+  margin-left: 3.7%;
+  text-align: center;
+  align-items: center;
+  margin-top: 1.5em !important;
+  font-size: 1.5em;
+  font-weight: bold !important;
+  width: 92%;
+  max-width: 1200px;}
+
+h11 {
+  /*Descriptions*/
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  display: block;
+  margin-bottom: 0.1em !important;
+  margin: auto;
+  text-align: center !important;
+  align-items: center;
+  margin-top: 0.75em !important;
+  margin-bottom: 1em !important;
+  font-size: 1em;
+  width: 90% !important;
+  max-width: 660px;
+
+}
+
+h12 {
+  color: white;
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  margin-top: 1.88em;
+  margin-bottom: 0.3em;
+  font-size: 1.2em;
+  width: 100%;
+
+}
+
+h3{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin-bottom: 0em;
+
+}
+
+p{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9em;
+    text-align: center;
+    padding-left:10%;
+    padding-right:10%;
+    margin-top: 0%;
+
+}
+
+h4{
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  text-align: left;
+  margin-left: 0.15em !important;;
+  margin:0;
+}
+
+
+title1{
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  text-align: left;
+  font-size: 2.2em;
+  margin:0;
+
+}
+/* Inserts blank line so I can adjust sapces between text and charts easily */
+span:before {
+  content: '';
+  width: 100%;
+  height: 0.5em;
+  display: inline-block;
+  background: transparent;
+  /* Remove, just showing empty line */
+}
+
+/* Set the apperance of the class, chart */
+.chart{
+  background-color: white;
+  padding: 0.2em  !important;
+  text-align: center; /* Moves drop down/slider to center of chart*/
+  border-width: .2em;
+  height: 100%;
+  width: 98%;
+  display: inline-block !important;
+  min-width: 280px;
+  margin: .2em;
+  border-radius: .5em;
+  min-width: 98%;
+
+    
+}
+/* same as chart, but different top margin as not the first */
+.chart0 {
+  background-color: white;
+  padding: 0.2em !important;
+  text-align: center; /* Moves drop down/slider to center of chart*/
+  border-width: .2em;
+  height: 100%;
+  width: 98%;
+  min-width: 280px;
+  margin: .2em;
+  border-radius: .5em;
+  min-width: 98%;
+
+}
+/* use for full width chart */
+.chart1{
+  background-color: white;
+  border-width: .2em;
+  border-radius: .5em;
+  text-align: center;
+  padding: 0.1em  !important;
+  min-width: 98%;
+  min-width: 250px;
+
+}
+.chart4 {
+  background-color: none;
+  color: white;
+  padding: 0.2em !important;
+  text-align: center;
+  font: Helvetica Neue;
+  /* Moves drop down/slider to center of chart*/
+  border-width: .2em;
+  height: 100%;
+  width: 98%;
+  display: inline-block !important;
+  min-width: 280px;
+  margin: .2em;
+  border-color: none;
+  min-width: 98%;
+
+
+}
+.chart3 {
+  background-color: white;
+  padding: 0.2em !important;
+  text-align: center;
+  /* Moves drop down/slider to center of chart*/
+  border-width: .2em;
+  height: 100%;
+  width: 98%;
+  display: inline-block !important;
+  min-width: 280px;
+  margin: .2em;
+  margin-left: 0.3em;
+  margin-right: 0.3em;
+  border-radius: .5em;
+  min-width: 98%;
+
+
+}
+
+.a_container {
+  display: inline-table;
+  justify-content: center !important;
+  vertical-align: top;
+  text-align: center !important;
+  align-items: center;
+  margin-left: 1.3%;
+  margin-top: 0px;
+  min-width: 280px;
+  height: 100%;
+
+
+}
+
+
+.a_container1 {
+  display: block;
+  flex-flow: row wrap;
+  justify-content: center;
+  text-align: center;
+  margin-top: 0px;
+  margin: auto auto;
+  min-width: 280px;
+  height: 100%;
+
+}
+
+.a_container2 {
+  display: block;
+  flex-flow: row wrap;
+  justify-content: center;
+  text-align: center;
+  margin-top: 0px;
+  margin: auto;
+  width: auto;
+  min-width: 280px;
+  height: auto;
+
+}
+
+.a_container3 {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin-top: 0px;
+  width: fit-content;
+  margin: auto auto;
+  min-width: 280px;
+  height: 100%;
+
+}
+
+.a_container4 {
+  display: block;
+  flex-flow: row wrap;
+  justify-content: center;
+  text-align: center;
+  margin-top: 0px;
+  margin: auto auto;
+  min-width: 280px;
+  height: 100%;
+  max-width: 700px;
+
+
+}
+
+
+.container_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 3px;
+  justify-content: center !important;
+  vertical-align: bottom;
+  text-align: center !important;
+  align-content: center;
+  max-width: 90%;
+  margin:auto;
+  max-width: 1200px;
+  margin-bottom: 0px !important;
+  margin-top: 0px !important;
+
+}
+
+.chart_grid {
+  background-color: white;
+  border-width: .2em;
+  border-radius: .5em;
+  height: 330px;
+  min-width: 100%;
+  text-align: center;
+  padding: 0.2em !important;
+  margin-left: 0px;
+
+}
+
+.text_container {
+    padding: 0.5em;
+}
+
+hr.line {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: transparent;
+  color: #F2F3F5;
+  width: 90%;
+  max-width: 500px;
+  border-top: 1.5px solid #F2F3F5;
+}
+
+/* Mobile friendly version to allow for clear viewing on a smartphone screen*/
+
+@media only screen and (max-width: 400px) {
+.container_grid {
+
+    width: 100%;
+    margin-left: 0%;
+    display: block !important;
+    }
+
+.text_container_1 {
+  display: none;
+}
+
+.text_container {
+  padding: -1em !important;
+}
+
+h8  {margin-top: -0.8em !important;}
+
+h7 {width: 92% !important}
+
+}
+
+@media only screen and (max-width: 700px) {
+  .chart {
+    min-width: 98%;
+    padding: 0px;
+  }
+
+  .a_container {
+    padding: 0px;
+    gap: 10px 10px;
+    width: 100%;
+    margin-left: 0;
+    margin-right:0;
+  }
+
+.text_container_1 {
+  display: none;
+  }
+  .chart1 {
+    min-width: 98%;
+    padding: 0px;
+  }
+  
+  .chart0 {
+    min-width: 98%;
+    padding: 0px;
+    }
+  .a_container1 {
+    width: 100%;
+  }
+.container_grid {
+
+  min-width:100%;
+  margin-left: 0%;
+  margin-right: 0%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 1.5px;
+  margin-bottom: 0px !important;
+  margin-top: 0px !important;
+
+}
+
+
+
+.chart_grid {
+  background-color: white;
+  border-style: solid;
+  border-color: grey;
+  border-width: .2em;
+  border-radius: .5em;
+  height: 330px;
+  width: 100%;
+  min-width: 100% !important;
+  text-align: center;
+  padding: 0.05em !important;
+
+
+}
+}
+
+@media only screen and (min-width: 700px) {
+  .chart {
+    max-width: 98%;
+
+  }
+
+ .chart1 {
+   max-width: 98%;
+   padding: 0px;
+ }
+
+ .chart0 {
+   min-width: 98%;
+   padding: 0px;
+ }
+  .a_container1 {
+    width: 80%;
+ }
+
+  .a_container2 {
+    width: 70%;
+ }
+.a_container {
+  width: 48%;
+
+
+}
+
+.a_container4 {
+  width: 65%}
+
+.text_container {
+  display: none;
+}
+
+}
+
+
+@media only screen and (min-width: 1000px){
+    .a_container1 {
+        width: 68%;
+      }
+
+    .a_container2 {
+        width:60%;
+      }
+.text_container {
+  display: none;
+}
+
+.a_container4 {
+  width: 65%
+}
+}
+
+
+@media only screen and (min-width: 1300px) {
+  .chart {
+    max-width: 98%;  /* change to 30% for 3 charts, etc.*/
+  }
+  .chart0 {
+    max-width: 98%;
+      /* change to 30% for 3 charts, etc.*/
+  }
+  .a_container1 {
+    width: 65%;
+    max-width: 880px;
+ }
+  .a_container2 {
+    width: 60%;
+    max-width: 880px;
+}
+.text_container {
+  display: none;
+}
+
+.a_container4 {
+  max-width: 800px
+}
+
+
+}
+
+@media only screen and (min-width: 1600px) {
+.text_container {
+    display: none;
+  }
+  .a_container1 {
+    width: 55%;
+    max-width: 880px;
+  }
+  .a_container2 {
+    width: 50%;
+    max-width: 880px;
+}
+}
+

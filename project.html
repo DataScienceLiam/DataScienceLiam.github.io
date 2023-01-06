@@ -13,7 +13,7 @@
     <title>Data Science Project</title>
 
     <!-- Link to my style sheet -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="project_style.css">
 
     <!--The next three lines allow the Vega embed-->
     <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
@@ -46,6 +46,10 @@
 </div>
     
 
+  <style>
+    a { color: #D4AF37; } /* Link color */
+  </style>
+
 
 <body>
 
@@ -53,19 +57,194 @@
 <!-- Week 1-->
 
 
-<h2>Map of the world .......</h2>
-      <!-- <p> (sub heading) Insert text here </p> -->
+<h10>Is UK taxation high enough?</h10>
+
+<hr class="line">
+
+<h11>Last year, during their short but disruptive tenure, the previous Prime Minister and Chancellor announced a series of
+tax cuts. Would the UK have benefited in the long run had they gone ahead? In particular, I look at the potential costs
+and benefits that can arise due to changes in taxation. Furthermore, I look at how UK taxation has changed over time,
+and how it compares with other nations.
+</h11>
+
+<h12>How has UK taxation changed over time?</h12>
+<!-- <p> (sub heading) Insert text here </p> -->
+
+
+<!--Chart showing UK tax breakdown -->
+<!-- Changes which chart is embeded depending on screen size.
+Unlike the other vega charts, a concatenated chart cannot be width = container -->
+
+<script>
+  let width = screen.width;
+
+if (width > 950) {myChart1 = "Tax breakdown chart.json";
+}
+if (width <= 950) {myChart1 = "Tax breakdown chart medium.json";
+}
+if (width <= 450) {myChart1 = "Tax breakdown chart small.json";
+}
+
+</script>
+<container class="a_container3">
+  <div class="chart3" id="chart1">
+    <script>
+      vegaEmbed('#chart1', myChart1);
+    </script>
+  </div>
+</container>
+
+<h11>This visualisation shows that the tax in the UK relative to GDP has increased over time. Since 1965, there has been a
+greater reliance on regressive taxes.
+<span></span>
+
+I used <a href="https://colab.research.google.com/drive/1Y09AQdaZ9VGX2U71Gp8vZM9Mo-7mLJQ5?usp=sharing" target="_blank" rel="noopener noreferrer">Python</a> to select the main sources of revenue from an OECD CSV file, subtracting the sum of these from the total
+to create the category ‘other’. I also scraped yearly inflation data which I converted to an index by using a loop to
+iteratively execute a formula in order to adjust the values to today’s equivalents.
+
+Using GDP data from the ONS, I calculated tax as a percentage of GDP and layered it with the OECD average, which uses
+data from the <a href="https://stats.oecd.org/SDMX-JSON/data/REV/NES.TOTALTAX.TAXGDP.OAVG?contentType=json" target="_blank" rel="noopener noreferrer">OECD API</a>.
+Unlike the APIs seen in class, the OECD's is not particularly clean, with the years stored as a completely separate
+property. By transforming the data, I got around this issue.
+</h11>
+
+<span></span>
+<span></span>
+<!--Chart showing UK Gini coefficent and median income -->
+<container class="a_container4">
+  <div class="chart" id="chart2">
+    <script>
+      var myChart2 = "Gini & Income chart.json";
+      vegaEmbed('#chart2', myChart2);
+    </script>
+  </div>
+</container>
+
+<h11>Over time, the Gini coefficient after tax and redistributions has increased, indicating a rise in inequality. This is
+mainly due to widening inequality in gross incomes rather than changes in the taxation and welfare systems. The impact
+of taxation and redistribution has remained mostly constant, reducing the original Gini coefficient by approximately
+40%.
+<span></span> 
+This chart uses two datasets which I merged in <a href="https://colab.research.google.com/drive/1U0yN9wrOJieWLVBMwfGGBgJ39RXvY7f_?usp=sharing" target="_blank" rel="noopener noreferrer">Python</a>. Partway through the data, the year values changed to year pairs
+(e.g., 2020/21). This would cause issues when plotting in Vega-Lite, so I redefined the column by keeping only the first
+four digits of each value.
+</h11>
+
+<span></span>
+<h2>How does the UK compare with other nations?</h2>
+
+
+<!--Chart showing world map with tax rates -->
+<container class="a_container2">
+  <div class="chart4" id="chart3">
+    <script>
+      var myChart3 = "World wide tax rates map.json";
+      vegaEmbed('#chart3', myChart3);
+    </script>
+  </div>
+</container>
+
+<h11>This map shows that for each tax type, the UK is similar to most of Europe.
+<span></span>
+When combining the taxation data onto the map, the problem of different names for countries results in many values lost.
+To avoid this issue, I used a library called pycountry to assign country codes in <a href="https://colab.research.google.com/drive/130b-xfxS5IrDv3CCm_rL1i0mq8bXyHJP?usp=sharing" target="_blank" rel="noopener noreferrer">Python.</a>
+</h11>
+<span></span>
+
+
+<!--Chart showing Tax revenue per capita for G7 (+2) countries overtime -->
+<script>
+if (width > 450) {myChart4 = "Tax revenue per capita chart.json";
+}
+if (width <= 450) {myChart4="Tax revenue per capita chart small.json";
+}
+</script>
+<container class="a_container3">
+  <div class="chart3" id="chart4">
+    <script>
+      vegaEmbed('#chart4', myChart4);
+    </script>
+  </div>
+</container>
+
+<h11>The UK has seen low growth in taxation per capita and currently has one of the lowest levels compared to these eight
+developed countries.
+<span></span>
+Although the tax revenue values were available as a CSV file from the OECD, per capita values aren't. Therefore, I used
+a <a href="https://colab.research.google.com/drive/106W514s-f1hD5IkURJdUErXlBNR7miUz?usp=sharing" target="_blank"
+  rel="noopener noreferrer">Python</a> loop to scrape the historical population values from the demographics page of each country on Wikipedia. Some
+tables for a few countries had multiple indexes, so I used an if statement within the loop to drop them. With the
+population history, I could then calculate the per capita values, which I also adjusted for inflation.
+</h11>
+
+<h2>Benefits of taxation</h2>
+
+
+<!--Chart showing correlation between tax and spending -->
+<container class="a_container4">
+  <div class="chart" id="chart5">
+    <script>
+      var myChart5 = "Tax vs Spending.json";
+      vegaEmbed('#chart5', myChart5);
+    </script>
+  </div>
+</container>
+
+<h11>Though one would expect countries with higher levels of taxation per capita to have higher per capita spending, I wanted
+to verify whether this is the case, as countries may instead use borrowing to fund spending. I used 
+<a href="https://colab.research.google.com/drive/13DvN1kdmTjU79q3SA-tWhUeHJopC7-Ol?usp=sharing" target="_blank"
+  rel="noopener noreferrer">Python</a> to scrape
+date from two websites, which I used to calculate the data for this chart, stripping unwanted characters and calculating
+the per capita values. I then used pycountry to assign country codes to make merging easier. The chart verifies that
+spending is highly determined by the level of taxation.</h11>
 
 
 
-  <!--Chart 3 (1) showing UK GDP over time -->
-<container class="a_container1">
-    <div class="chart" id="chart1">
-        <script>
-          var myChart1 = "World wide tax rates map.json";
-          vegaEmbed('#chart1', myChart1);
-        </script>
-      </div>
-      </container>
+<!--Chart showing correlation between spending and education + education and life expectancy -->
 
-<h7>Data cleannig was painful....</h7>
+<script>
+if (width > 600) {myChart6 = "Gov spending, Education and Life expectancy chart, horizontal.json";
+}
+if (width <= 600) {myChart6 = "Gov spending, Education and Life expectancy chart, vertical.json";
+}
+
+</script>
+<container class="a_container3">
+  <div class="chart3" id="chart6">
+    <script>
+      vegaEmbed('#chart6', myChart6);
+    </script>
+  </div>
+</container>
+<h11>Using <a href="https://colab.research.google.com/drive/1_jKI5DF1wua3lblFq4B0scrJPlGR-JUo?usp=sharing" target="_blank"
+  rel="noopener noreferrer">Python</a>, I then scraped data and combined it with that from the previous visualisation to show a clear exponential trend
+between spending per capita and both the education index and life expectancy. Suggesting that greater taxation, which
+allows for more spending, contributes to higher levels of education and life expectancy.</h11>
+<h2>The cost of higher taxation</h2>
+
+<!--Chart showing correlation between tax and growth-->
+<container class="a_container4">
+  <div class="chart" id="chart7">
+    <script>
+      var myChart7 = "Tax vs growth.json";
+      vegaEmbed('#chart7', myChart7);
+    </script>
+  </div>
+</container>
+<h11>I regressed taxation levels with GDP growth and found essentially no correlation, contrary to the belief of some. Using
+<a href="https://colab.research.google.com/drive/1kPDOAO7VL9dAd4_tg56ySXHml-cDDoPF?usp=sharing" target="_blank"
+  rel="noopener noreferrer">Python</a> to scrape GDP levels for 2021 and 2011 to calculate the average compounded growth rate.</h11>
+
+<span> </span>
+<h11>While there were few APIs with the data I wanted; to update the charts, I could simply download the latest CSV files and
+then run my python code which would also scrape the latest data combining and calculating up-to-date values.</h11>
+
+
+<h11>To conclude, the UK generates less tax per capita than many of its peers. Increasing taxation would almost certainly
+increase government spending, which would be beneficial to society, for instance improving education and life
+expectancies, though the marginal benefits are lower for developed countries.
+Greater use of progressive taxation would also help reduce income inequality which my visualisation showed had risen
+over the years.
+As my analysis finds, raising the level of taxation should not impact economic growth in the long run; it seems the
+benefits would far exceed the costs.
+</h11>

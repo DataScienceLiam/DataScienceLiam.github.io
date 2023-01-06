@@ -1,0 +1,58 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "data": {"url": "https://raw.githubusercontent.com/DataScienceLiam/DataScienceLiam.github.io/main/Tax%20revenue%20per%20capita%20data.json",
+  "format":{
+    "type": "json"
+  }
+  },
+
+    "title": {
+    "text": "Tax revenue per capita, $",
+    "subtitle":["Adjusted for average global inflation","Sources: OECD, IMF"],
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"
+
+  },
+
+"width": 90,
+"height": 90,
+  "padding":{
+    "top":0,
+    "bottom":0,
+    "right":0,
+    "left":0},
+
+  "mark": {
+    "type":"line",
+    "color":"#5FA777"},
+
+  
+  "encoding": {
+
+    "x": {
+      "field": "Year", 
+      "type": "temporal",
+      "axis":{"tickCount":3, "labelAngle":-30, "grid": true},
+      "title":null},
+
+    "y": {
+      "field": "Tax revenue per capita", 
+      "type": "quantitative",
+      "axis":{"tickCount":5, "grid": true},
+      "title":null},
+
+     "facet":{
+       "field": "Country",
+       "columns": 3,
+       "title":null,
+       "spacing":15
+     },
+      "tooltip": [{"field": "Year", "type": "temporal",   "format": "%Y", "title":"Year"},  
+      {"field": "Tax revenue per capita", "type": "quantitative", "format": ",.0f", "title":"Tax revenue per capita, $"}]
+  },
+
+"resolve": {"scale": {"y": "independent"}}
+}

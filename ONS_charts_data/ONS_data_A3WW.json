@@ -2677,6 +2677,7 @@
 
 "height": 220,
 "width": "container",
+"padding": 0,
 
   "layer": [
     {
@@ -2691,7 +2692,7 @@
 {"mark": {"type":"line", "color": "#097045"},
 "encoding": {
 
-        "x": {"field": "DateClean", "type": "temporal", "title": "Date", "axis":{"grid":true}},
+        "x": {"field": "DateClean", "type": "temporal", "title": "Date", "axis":{"grid":true, "values":["2002","2006","2010","2014","2018","2022"]}},
         "y": {"field": "value", "type": "quantitative", "title": "Three month growth, %", "axis":{"grid":true}}
       }
     },

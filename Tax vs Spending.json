@@ -1,0 +1,110 @@
+{ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+    "title": {
+      "text": "Tax vs Government Spending",
+      "subtitle":["Size of points based on GDP","Sources: UN, IMF & CIA World Factbook"],
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black"
+    },
+
+  "config": {
+    "background":"white",
+    "view": {
+      "stroke": "transparent"}},
+  
+    "data": {
+      "url": "https://raw.githubusercontent.com/DataScienceLiam/DataScienceLiam.github.io/main/Tax%20vs%20Spending%20per%20capita%20data.json",
+      "format":{"type":"json"}},
+    "height": 300,
+    "width": "container",
+
+
+"layer":[
+
+  {  "mark": {
+      "type":"circle", "color":"#06a94d",
+      "opacity":0.4},
+    
+  
+    "encoding": {
+      "x": {
+        "field": "Spending per Capita", 
+        "type": "quantitative",
+        "scale": {"domain": [0.25, 45000]},
+        "axis":{"grid": false, "tickCount": 9},
+        "title":"Spending per Capita, $"},
+  
+      "y": {
+        "field": "Tax per Capita", 
+        "type": "quantitative",
+        "scale": {"domain": [0.25, 45000], "type": "linear"},
+        "axis":{"grid": false, "tickCount": 9},
+        "title":"Tax per Capita, $"},
+  
+      "size": {
+        "field": "GDP", 
+        "type": "quantitative",
+        "scale":{"range":[40,1500]},
+        "title":"GDP",
+        "legend":null},
+      
+          "tooltip":[
+        {"field":"Country", "type": "ordinal", "title":"Country"},
+        {"field":"Tax per Capita", "type": "quantitative", "title":"Tax per Capita", "format":"$,.5r"},
+        {"field":"Spending per Capita", "type": "quantitative", "title":"Spending per Capita", "format":"$,.5r"},
+        {"field":"GDP", "type": "quantitative", "title":"GDP", "format":"$,.5r"}]}},
+  
+  {
+      "mark": {
+        "type": "line",
+        "color": "#000000"
+      },
+      "transform": [
+        {
+          "regression": "Tax per Capita",
+          "method": "linear",
+          "on": "Spending per Capita"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "Spending per Capita",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Tax per Capita",
+          "type": "quantitative",
+          "scale":{"type": "linear"}
+        }
+      }
+    },
+
+    {
+      "transform": [
+        {
+          "regression": "Tax per Capita",
+          "on": "Spending per Capita",
+          "method": "linear",
+          "params": true
+        },
+        {"calculate": "'R²: '+format(datum.rSquared, '.2f')", "as": "R2"}
+      ],
+      "mark": {
+        "type": "text",
+        "color": "#06a94d",
+        "x": "width",
+        "align": "right",
+        "y": 45
+      },
+      "encoding": {"text": {"type": "nominal", "field": "R2"}}    
+    }
+
+
+
+
+  ]
+}
+
+

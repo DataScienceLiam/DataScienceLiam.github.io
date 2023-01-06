@@ -1,0 +1,117 @@
+{ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+    "title": {
+      "text": "Tax vs Average growth rate",
+      "subtitle":["Size of points based on Population","Calculated using data from Countryeconomy.com"],
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black"
+    },
+
+  "config": {
+    "background":"white",
+    "view": {
+      "stroke": "transparent"}},
+  
+    "data": {
+      "url": "https://raw.githubusercontent.com/DataScienceLiam/DataScienceLiam.github.io/main/Tax%20%25%20of%20GDP%20vs%20growth.json",
+      "format":{"type":"json"}},
+    "height": 300,
+    "width": "container",
+
+"transform": [{
+  "filter": {"field": "Average growth", "gt": -15}},
+  {"filter": {"field": "Tax as % of GDP", "gt": 0}},
+  {"filter": {"field": "Tax as % of GDP", "lt": 70}},
+  {"filter": {"field": "Average growth", "lt": 25}}],
+
+
+"layer":[
+
+  {  "mark": {
+      "type":"circle", "color":"#06a94d",
+      "opacity":0.4},
+    
+  
+    "encoding": {
+      "x": {
+        "field": "Average growth", 
+        "type": "quantitative",
+        "scale": {"domain": [-15, 20]},
+        "axis":{"grid": false, "tickCount": 9},
+        "title":"Average growth, %"},
+
+  
+      "y": {
+        "field": "Tax as % of GDP", 
+        "type": "quantitative",
+        "scale": {"domain": [0, 70], "type": "linear"},
+        "axis":{"grid": false, "tickCount": 9},
+        "title":"Tax as % of GDP"},
+  
+      "size": {
+        "field": "Population", 
+        "type": "quantitative",
+        "scale":{"range":[40,1500]},
+        "title":"GDP",
+        "legend":null},
+      
+          "tooltip":[
+        {"field":"Country", "type": "ordinal", "title":"Country"},
+        {"field":"Tax as % of GDP", "type": "quantitative", "title":"Tax as % of GDP", "format":".2f"},
+        {"field":"Average growth", "type": "quantitative", "title":"Average growth, %", "format":"0.2f"},
+        {"field":"Population", "type": "quantitative", "title":"Population", "format":",.5r"}]}},
+  
+  {
+      "mark": {
+        "type": "line",
+        "color": "#000000"
+      },
+      "transform": [
+        {
+          "regression": "Tax as % of GDP",
+          "method": "linear",
+          "on": "Average growth"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "Average growth",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Tax as % of GDP",
+          "type": "quantitative",
+          "scale":{"type": "linear"}
+        }
+      }
+    },
+
+    {
+      "transform": [
+        {
+          "regression": "Tax as % of GDP",
+          "on": "Average growth",
+          "method": "linear",
+          "params": true
+        },
+        {"calculate": "'R²: '+format(datum.rSquared, '.2f')", "as": "R2"}
+      ],
+      "mark": {
+        "type": "text",
+        "color": "#06a94d",
+        "x": "width",
+        "align": "right",
+        "y": 80
+      },
+      "encoding": {"text": {"type": "nominal", "field": "R2"}}    
+    }
+
+
+
+
+  ]
+}
+
+
